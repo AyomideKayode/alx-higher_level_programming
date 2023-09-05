@@ -1,7 +1,7 @@
 # Project: 0x01. Python - if/else, loops, functions
 ![img](./main/Python-if-else.png)
 > Each file in this repository holds code that illustrates an essential concept of programming,
-> specific to the Python programming language: if/elif/else loops, range, ord(), chr(),
+> specific to the Python programming language: `if/elif/else`, `loops`, `range`, `ord()`, `chr()`,
 >  modulo, copy of string, bytecode
 
 ## Resources
