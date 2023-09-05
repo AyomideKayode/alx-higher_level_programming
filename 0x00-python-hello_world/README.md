@@ -29,7 +29,7 @@
 ### Description of what each file shows (Tasks):
 
 * main --- folder holds test files that showcase examples of how to use functions.
-* main.h --- holds files' function prototypes.
+* lists.h --- holds the `.c` files' function prototypes.
 
 * Files that start with:
 0. [Run Python file](0-run) : Write a Shell script that runs a Python script.
@@ -130,6 +130,6 @@
 ---
 ### Author
 
-- Website - [Ayomide Kayode](https://github.com/AyomideKayode)
-- <em>ALX SOFTWARE ENGINEERING PROGRAM</em> - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
-- Twitter - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
+- <em>Website</em> - [Ayomide Kayode](https://github.com/AyomideKayode)
+- <em>ALX Software Engineering Program</em> - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- <em>Twitter</em> - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
