@@ -59,7 +59,7 @@ Namespaces are one honking great idea -- let's do more of those!
 
 ## About
 - This repository consists of all the Python programming projects done🙂 in the [ ALX Africa](https://www.alxafrica.com/) Full stack Software Engineering course by [Ayomide Kayode](https://github.com/AyomideKayode).
-- All main.c files are prewritten by the school. We (the students) build functions that produce a specific     output while also taking into consideration edge cases.
+- All main.py files are prewritten by the school. We (the students) build functions that produce a specific output while also taking into consideration edge cases.
 
 
 ## Resource
