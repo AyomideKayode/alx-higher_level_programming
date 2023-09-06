@@ -2,7 +2,6 @@
 
 # Zen (Python) 
 
->Not sure if C has taught me to think like a programmer or python is just really easy.
 
 <details>
 <summary>The Zen of Python, by Tim Peters</summary>
@@ -41,24 +40,26 @@ Namespaces are one honking great idea -- let's do more of those!
 
 <pre>$ pycodestyle --version<br>$</pre>
 
+- Run it with file.
+
+<pre>$ pycodestyle 3-print_number.py<br>$</pre>
+
 </details>
 
-# <div align="center">Welcome to the world of C programming language.😎🤗</div>
-### <div align="center">🌱 I’m currently learning C Programming Language. With tasks from the ALX framework    .</div>
 ---
-### <div align="center">🔭 And by extension, currently working on a task from one of the numerous ALX Proje    cts I have, as you will see from the list below.😁</div>
+
+# <div align="center">Welcome to the Zen of Python🐍 programming language.😎🤗</div>
+### <div align="center">🌱 I’m learning Python Programming Language. With tasks from the ALX framework.</div>
+---
+### <div align="center">🔭 And by extension, currently working on a task from one of the numerous ALX Projects I have, as you will see from the list below.😁</div>
 ---
 <p align="center">
    <img src="./0x00-python-hello_world/main/PYTHON-jpeg.png"/>
-   ![img](./main/Python-if-else.png)
 </p>
 
 ## About
-- This repository consists of all the Python programming projects done🙂 in the [ ALX Africa](https://www.alxafri    a.com/) Full stack Software Engineering course by [Ayomide Kayode](https://github.com/AyomideKayode).
- 19 - All main.c files are prewritten by the school. We (the students) build functions that produce a specific     output while also taking into consideration edge cases.
-## About
-
-- This repository consists of all the .Subject projects done with [ALX Africa](https://www.alxafrica.com/) Full stack Software Engineering course in partnership with [Holberton School](https://www.holbertonschool.com/) by [th3\_gr00t](https://th3-gr00t.tk/).
+- This repository consists of all the Python programming projects done🙂 in the [ ALX Africa](https://www.alxafrica.com/) Full stack Software Engineering course by [Ayomide Kayode](https://github.com/AyomideKayode).
+- All main.c files are prewritten by the school. We (the students) build functions that produce a specific     output while also taking into consideration edge cases.
 
 
 ## Resource
@@ -70,6 +71,7 @@ Namespaces are one honking great idea -- let's do more of those!
 
 ---
 
+## Projects
 - [0x00](./0x00-python-hello_world) : Hello, World.
 - [0x01](./0x01-python-if_else_loops_functions) : if/else, loops, functions.
 - [0x02](./0x02-python-import_modules) : import & modules.
