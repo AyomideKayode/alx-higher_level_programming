@@ -14,7 +14,7 @@ if __name__ == '__main__':
 	result_divide = div(a, b)
 
 	# Print the results
-	print(f"{a} + {b} = {result_add}")
-	print(f"{a} - {b} = {result_sub}")
-	print(f"{a} * {b} = {result_multiply}")
-	print(f"{a} / {b} = {result_divide}")
+	print("{:d} + {:d} = {:d}".format(a, b, result_add))
+	print("{:d} - {:d} = {:d}".format(a, b, result_sub))
+	print("{:d} * {:d} = {:d}".format(a, b, result_multiply))
+	print("{:d} / {:d} = {:d}".format(a, b, result_divide))
