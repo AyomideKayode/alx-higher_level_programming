@@ -242,7 +242,7 @@
 	```
 ---
 ### Environment
-* Language: Python 3.4.3 (and C for #13)
+* Language: Python 3.4.3
 	* OS: Ubuntu 14.04 LTS
 	* Compiler: python3 (and gcc 4.8.4)
 	* Style guidelines: 
