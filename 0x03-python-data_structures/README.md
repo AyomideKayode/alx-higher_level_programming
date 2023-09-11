@@ -225,8 +225,20 @@
 	Linked list is a palindrome
 	carrie@ubuntu:0x03$
 	```
-14. CPython #0: Python lists | [100-print_python_list_info.c](./100-print_python_list_info.c) :
-	- Unavailable. To-do.
+14. [CPython #0: Python lists](./100-print_python_list_info.c) :
+	- Create a C function that prints some basic info about Python lists.
+	- Prototype: `void print_python_list_info(PyObject *p);`
+	- Format: see example [show](100-test_lists.py)
+	- Python version: 3.4 (and above)
+	- Your shared library will be compiled with this command line: `gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,PyList -o libPyList.so -fPIC -I/usr/include/python3.4 100-print_python_list_info.c`
+	- OS: Ubuntu 14.04 LTS
+	- Start by reading:
+		- listobject.h
+		- object.h
+		- [Common Object Structures](https://docs.python.org/3.4/c-api/structures.html)
+		- [List Objects](https://docs.python.org/3.4/c-api/list.html)
+	- For further understanding, this is my note on it: [C in Python](./main/Task%2014%20notes.md)
+
 ---
 ### Environment
 * Language: Python 3.4.3 (and C for #13)
