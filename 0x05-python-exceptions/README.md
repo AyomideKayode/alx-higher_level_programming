@@ -4,7 +4,7 @@
 
 ## Resources
 
-#### Read or watch:
+#### **Read or watch:**
 
 * [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
 * [Learn to Program 11 Static & Exception Handling](https://www.youtube.com/watch?v=7vbgD-3s-w4)
@@ -23,7 +23,7 @@
 ---
 ## Description of what each file shows (Tasks):
 
-* main --- folder holds test files that showcase examples of how to use functions.
+* **main** --- folder holds test files that showcase examples of how to use functions.
 
 * Files that start with:
 0. [Safe list printing](./0-safe_print_list.py) : Write a function that prints x elements of a list.
@@ -250,3 +250,18 @@
 				106 RETURN_VALUE
 	```
 
+---
+### Environment
+* Language: Python 3.4.3 (and C for #10)
+	* OS: Ubuntu 14.04 LTS
+	* Compiler: python3 (and gcc 4.8.4)
+	* Style guidelines: 
+		- [PEP 8 (version 1.7)](https://www.python.org/dev/peps/pep-0008/)
+		- [Betty style](https://github.com/holbertonschool/Betty/wiki)
+
+---
+## Author
+
+- **<em>Website</em>** - [Ayomide Kayode](https://github.com/AyomideKayode)
+- **<em>ALX Software Engineering Program</em>** - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- **<em>Twitter</em>** - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
