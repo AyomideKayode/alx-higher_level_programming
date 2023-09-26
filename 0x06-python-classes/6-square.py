@@ -66,17 +66,12 @@ class Square:
 
         """
         # verify that is a tuple of 2 positive integers
-        if not isinstance(value, tuple) or len(value) != 2:
+        if not isinstance(value, tuple) or len(value) != 2 or \
+        not all([type(i) == int for i in value]) or \
+        not all([i >= 0 for i in value]):
             raise TypeError("position must be a tuple of 2 positive integers")
 
-        elif not isinstance(value[0], int) or not isinstance(value[1], int):
-            raise TypeError("position must be a tuple of 2 positive integers")
-
-        elif (value[0] < 0 or value[1] < 0):
-            raise TypeError("position must be a tuple of 2 positive integers")
-
-        else:  # update the private instance attribute
-            self.__position = value
+        self.__position = value  # Update the private instance attribute
 
     def area(self):
         """
@@ -88,9 +83,10 @@ class Square:
     def my_print(self):
         if self.__size == 0:
             print()
+            return
         else:
             for i in range(self.__position[1]):
                 print()
-            for j in range(self.__size):
+            for i in range(self.__size):
                 print(' ' * self.__position[0], end='')
                 print('#' * self.__size)
