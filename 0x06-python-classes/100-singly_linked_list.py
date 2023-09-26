@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+
 """
-Module 100-singly_linked_list
-Defines class Node (with private data and next_node)
-Defines class SinglyLinkedList (with private head and public sorted_insert)
+Defines class Node (with private data and next_node attributes)
+Defines class SinglyLinkedList (with private head and public sorted_insert attributes)
 """
 
 
