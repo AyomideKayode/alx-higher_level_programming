@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 
 """
-Create class Square that defines a square by
+class Square that defines a square
 Private instance attribute: size
-Methods Getter and Setter properties for size.
 property def size(self): to retrieve it
 property setter def size(self, value): to set it:
-Attribute position which takes a default (0, 0) tuple.
-Methods Getter and Setter properties for position.
+
+Private instance attribute: position
+which takes a default (0, 0) tuple.
 property def position(self): to retrieve it
 property setter def position(self, value): to set it:
+
 And a Public instance method: def area(self):
 that returns the current square area
 Method my_print prints the square using "#".
@@ -24,8 +25,8 @@ class Square:
     """
     def __init__(self, size=0, position=(0, 0)):
         # Initialize private attributes
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property  # property to retrieve size (Getter method)
     def size(self):
