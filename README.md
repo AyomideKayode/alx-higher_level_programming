@@ -78,3 +78,4 @@ Namespaces are one honking great idea -- let's do more of those!
 - [0x03](./0x03-python-data_structures/) : Data Structures: Lists, Tuples
 - [0x04](./0x04-python-more_data_structures/) : More Data Structures: Set, Dictionary
 - [0x05](./0x05-python-exceptions/) : Exceptions
+- [0x06](./0x06-python-classes/) : Classes and Objects
