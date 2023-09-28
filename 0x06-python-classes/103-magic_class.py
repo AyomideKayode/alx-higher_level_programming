@@ -6,6 +6,10 @@ import math
 
 
 class MagicClass:
+    """
+    Initialize and define methods area and circumference
+    to represent a circle.
+    """
     def __init__(self, radius=0):
         """
         Initialize a MagicClass.
