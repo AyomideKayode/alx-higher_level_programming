@@ -2,7 +2,8 @@
 
 """
 Defines class Node (with private data and next_node attributes)
-Defines class SinglyLinkedList (with private head and public sorted_insert attributes)
+Defines class SinglyLinkedList
+(with private head and public sorted_insert attributes)
 """
 
 
