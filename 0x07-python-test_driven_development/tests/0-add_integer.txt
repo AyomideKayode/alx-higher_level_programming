@@ -1,5 +1,3 @@
-# Inside your "tests" folder, in a file named "test_add_integer.txt":
-
 # Setup: Import the module and function
 >>> mod = __import__("0-add_integer")
 >>> add_integer = mod.add_integer
@@ -82,3 +80,6 @@ TypeError: b must be an integer
 Traceback (most recent call last):
     ...
 ValueError: cannot convert float NaN to integer
+
+
+# run test case file with `python3 -m doctest -v ./tests/0-add_integer.txt`
