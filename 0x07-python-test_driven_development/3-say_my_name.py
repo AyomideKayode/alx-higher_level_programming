@@ -8,6 +8,7 @@ Prototype: def say_my_name(first_name, last_name=""):
 Raise exceptions is both names aren't string types. Strictly.
 """
 
+
 def say_my_name(first_name, last_name=""):
     """
     Function that prints user's first name and last name.
