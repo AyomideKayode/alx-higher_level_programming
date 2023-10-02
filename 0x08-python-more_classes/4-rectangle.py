@@ -5,7 +5,8 @@ Create class Rectangle that defines a rectangle by
 everything from Module 2-rectangle
 and expanding that to include:
 printing out a rectangle with # character using print() and str()
-
+and using __repr__ to print out the what the given the name of the class
+along with height and width values
 """
 
 
