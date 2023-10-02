@@ -28,8 +28,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         # initialize private attributes
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         # increment Rectangle population at instantiation
         Rectangle.number_of_instances += 1
 
