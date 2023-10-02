@@ -27,7 +27,7 @@ class Rectangle:
     def width(self):
         # property to retrive width
         return self.__width
-    
+
     @width.setter  # setter method for width
     def width(self, value):
         # verify that value is an integer
@@ -37,7 +37,7 @@ class Rectangle:
         # check that value is >= 0
         if value < 0:
             raise ValueError("width must be >= 0")
-        
+
         # update private instance attribute
         self.__width = value
 
@@ -45,7 +45,7 @@ class Rectangle:
     def height(self):
         # property to retrive height
         return self.__height
-    
+
     @height.setter  # setter method for height
     def height(self, value):
         # verify that value is an integer
@@ -55,6 +55,6 @@ class Rectangle:
         # check that value is >= 0
         if value < 0:
             raise ValueError("height must be >= 0")
-        
+
         # update private instance attribute
         self.__height = value
