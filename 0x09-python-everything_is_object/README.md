@@ -1,4 +1,5 @@
 # Project: 0x09. Python - Everything is object
+<img src="./Everything is object.jpg" alt="Everything-is-object" width=100%>
 
 ## Resources
 
