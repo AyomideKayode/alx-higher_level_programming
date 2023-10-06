@@ -58,7 +58,7 @@ TypeError: m_a must be a list or m_b must be a list
 >>> matrix_mul(m_a, m_b)
 Traceback (most recent call last):
     ...
-TypeError: m_a should contain only integers or floats or m_b should contain only integers or floats
+TypeError: m_a should contain only integers or floats
 
 # Invalid input: m_b contains a non-number (invalid)
 >>> m_a = [[1, 2], [3, 4]]
@@ -66,7 +66,7 @@ TypeError: m_a should contain only integers or floats or m_b should contain only
 >>> matrix_mul(m_a, m_b)
 Traceback (most recent call last):
     ...
-TypeError: m_a should contain only integers or floats or m_b should contain only integers or floats
+TypeError: m_b should contain only integers or floats
 
 # Invalid input: m_a is empty (invalid)
 >>> m_a = []
