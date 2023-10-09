@@ -6,6 +6,7 @@ Inherit from int
 MyInt is a rebel. MyInt has == and != operators inverted
 """
 
+
 class MyInt(int):
     """
     class utilizing int class that will
