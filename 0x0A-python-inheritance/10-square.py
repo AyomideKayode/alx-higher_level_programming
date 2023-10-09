@@ -2,7 +2,7 @@
 
 """
 Square Moldule
-Create class Square that inherits from Rectangle.
+Create class Square that inherits from `9-Rectangle`.
 Instantiation with size: def __init__(self, size)::
 size must be private. No getter or setter
 size must be a positive integer, validated by integer_validator
