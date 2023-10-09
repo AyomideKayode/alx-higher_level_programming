@@ -7,11 +7,12 @@ Contains empty class BaseGeometry
 with public instance method area
 """
 
+
 class BaseGeometry:
     """
     Base geometry class
     Method:
-    	area(self)
+        area(self)
     """
 
     def area(self):
