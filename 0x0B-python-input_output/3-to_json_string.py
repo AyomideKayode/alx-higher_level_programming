@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-import json
-
 """
 Module to return json of an object
 """
@@ -17,5 +15,7 @@ def to_json_string(my_obj):
     Returns:
         str: The JSON representation of the object as a string.
     """
+    import json
+
     obj_rep = json.dumps(my_obj)
     return obj_rep
