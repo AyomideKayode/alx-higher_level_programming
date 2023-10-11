@@ -1,10 +1,10 @@
-#!?usr/bin/python3
+#!/usr/bin/python3
 
 """
 Module to return an object (Python data structure)
 represented by a JSON string:
 Prototype: def from_json_string(my_str):
-No need to manage exceptions if the JSON string doesn’t represent an object.
+No need to manage exceptions if the JSON string does not represent an object.
 """
 
 
