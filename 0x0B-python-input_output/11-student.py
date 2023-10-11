@@ -3,7 +3,8 @@
 """
 Same Module details as 10-student.py
 To include:
-Public method def reload_from_json(self, json): that replaces all attributes of the Student instance:
+Public method def reload_from_json(self, json):
+that replaces all attributes of the Student instance:
 You can assume json will always be a dictionary
 A dictionary key will be the public attribute name
 A dictionary value will be the value of the public attribute
