@@ -13,6 +13,7 @@ of a Student instance (same as 8-class_to_json.py)
 You are not allowed to import any module
 """
 
+
 class Student:
     """
     Class that defines a Student
