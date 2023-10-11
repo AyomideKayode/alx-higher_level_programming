@@ -17,5 +17,6 @@ def from_json_string(my_str):
         object: the python object represented by the JSON string.
     """
     import json
+
     data_str = json.loads(my_str)
-    return data_str
+    return (data_str)
