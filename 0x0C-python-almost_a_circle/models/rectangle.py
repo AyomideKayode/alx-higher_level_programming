@@ -9,6 +9,8 @@ Class constructor: def __init__(self, width, height, x=0, y=0, id=None):
 Call the super class with id -
 this super call will use the logic of the __init__ of the Base class
 Assign each argument width, height, x and y to the right attribute
+Update with public method that returns the area value of the Rectangle instance
+def area(self):
 """
 
 
@@ -23,7 +25,7 @@ class Rectangle(Base):
         __width, __height, __x & __y
     """
     def __init__(self, width, height, x=0, y=0, id=None):
-        super().__init__(id)
+        super().__init__(id)  # call superclass constructor with id parameter
         self.width = width
         self.height = height
         self.x = x
@@ -93,7 +95,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        """Setter fo y.
+        """Setter for y.
         Raise exceptions where necessary."""
         if type(value) != int:
             raise TypeError("y must be an integer")
@@ -101,3 +103,9 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         # update private instance attribute
         self.__y = value
+
+    # Public Method: Area
+    def area(self):
+        """Calculate and returns the area of the Rectangle instance.
+        """
+        return (self.__width * self.__height)
