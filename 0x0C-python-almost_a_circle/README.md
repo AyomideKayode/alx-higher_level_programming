@@ -87,6 +87,23 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+3. [Validate attributes](./models/rectangle.py) : Update the class `Rectangle` by adding validation of all setter methods and instantiation (`id` excluded):
+	- If the input is not an integer, raise the `TypeError` exception with the message: `<name of the attribute> must be an integer`. Example: `width must be an integer`
+	- If `width` or `height` is under or equals 0, raise the `ValueError` exception with the message: `<name of the attribute> must be > 0`. Example: `width must be > 0`
+	- If `x` or `y` is under 0, raise the `ValueError` exception with the message: `<name of the attribute> must be >= 0`. Example: `x must be >= 0`
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./2-main.py 
+	[TypeError] height must be an integer
+	[ValueError] width must be > 0
+	[TypeError] x must be an integer
+	[ValueError] y must be >= 0
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
+
+
+
+
+
 
 
 
@@ -94,7 +111,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 3. Validate attributes | [models/rectangle.py](./models/rectangle.py) |
 | 4. Area first | [models/rectangle.py](./models/rectangle.py) |
 | 5. Display #0 | [models/rectangle.py](./models/rectangle.py) |
 | 6. __str__ | [models/rectangle.py](./models/rectangle.py) |
