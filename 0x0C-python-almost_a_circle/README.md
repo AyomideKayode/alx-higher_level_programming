@@ -30,10 +30,48 @@
 * **models**	--- folder that holds the main projects functions for submission
 * **tests**	--- folder that contains all testcase file for functions written (Unittest module)
 
-| Task | File |
-| ---- | ---- |
-| 0. If it's not tested it doesn't work | [tests/](./tests/) |
-| 1. Base class | [models/base.py](./models/base.py), [models/__init__.py](./models/__init__.py) |
+0. [If it's not tested it doesn't work](./tests/) : All your files, classes and methods must be unit tested and be PEP 8 validated.
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest discover tests
+	........
+	----------------------------------------------------------------------
+	Ran 8 tests in 0.001s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
+- <em>Note that this is just an example. The number of tests you create can be different from the above example.</em>
+1. [Base class](./models/base.py),
+	[Python Package](./models/__init__.py) : Write the first class `Base`:
+- Create a folder named `models` with an empty file `__init__.py` inside - with this file, the folder will become a Python package
+- Create a file named `models/base.py`:
+	- Class `Base`:
+		- private class attribute `__nb_objects = 0`
+		- class constructor: `def __init__(self, id=None):`:
+			- if `id` is not `None`, assign the public instance attribute `id` with this argument value - you can assume `id` is an integer and you don’t need to test the type of it
+			- otherwise, increment `__nb_objects` and assign the new value to the public instance attribute `id`
+- This class will be the “base” of all other classes in this project. The goal of it is to manage id attribute in all your future classes and to avoid duplicating the same code (by extension, same bugs)
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ls
+	0-main.py  README.md  main  models  tests
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./0-main.py 
+	1
+	2
+	3
+	12
+	4
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
+
+
+
+
+
+
+
+
+
+
 | 2. First Rectangle | [models/rectangle.py](./models/rectangle.py) |
 | 3. Validate attributes | [models/rectangle.py](./models/rectangle.py) |
 | 4. Area first | [models/rectangle.py](./models/rectangle.py) |
