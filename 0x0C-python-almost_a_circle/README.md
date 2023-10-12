@@ -99,6 +99,20 @@
 	[ValueError] y must be >= 0
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+4. [Area first](./models/rectangle.py) : Update the class `Rectangle` by adding the public method `def area(self):` that returns the area value of the `Rectangle` instance.
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./3-main.py 
+	6
+	20
+	56
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_rectangle.py
+	.........
+	----------------------------------------------------------------------
+	Ran 9 tests in 0.003s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
@@ -111,7 +125,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 4. Area first | [models/rectangle.py](./models/rectangle.py) |
 | 5. Display #0 | [models/rectangle.py](./models/rectangle.py) |
 | 6. __str__ | [models/rectangle.py](./models/rectangle.py) |
 | 7. Display #1 | [models/rectangle.py](./models/rectangle.py) |
