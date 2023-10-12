@@ -61,17 +61,39 @@
 	4
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+2. [First Rectangle](./models/rectangle.py) : Write the class `Rectangle` that inherits from `Base`:
+	- In the file `models/rectangle.py`
+	- Class `Rectangle` inherits from `Base`
+	- Private instance attributes, each with its own public getter and setter:
+	 	- `__width` -> `width`
+	 	- `__height` -> `height`
+	 	- `__x` -> `x`
+	 	- `__y` -> `y`
+	- Class constructor: `def __init__(self, width, height, x=0, y=0, id=None):`
+	 	- Call the super class with `id` - this super call with use the logic of the `__init__` of the `Base` class
+	 	- Assign each argument `width`, `height`, `x` and `y` to the right attribute
+- Why private attributes with getter/setter? Why not directly public attribute?
+- Because we want to protect attributes of our class. With a setter, you are able to validate what a developer is trying to assign to a variable. So after, in your class you can “trust” these attributes.
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./1-main.py 
+	1
+	2
+	12
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_rectangle.py
+	........
+	----------------------------------------------------------------------
+	Ran 8 tests in 0.002s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
 
 
-
-
-
-
-
-| 2. First Rectangle | [models/rectangle.py](./models/rectangle.py) |
+| Task | File |
+| ---- | ---- |
 | 3. Validate attributes | [models/rectangle.py](./models/rectangle.py) |
 | 4. Area first | [models/rectangle.py](./models/rectangle.py) |
 | 5. Display #0 | [models/rectangle.py](./models/rectangle.py) |
