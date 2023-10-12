@@ -11,6 +11,7 @@ from models.base import Base
 
 
 class TestBase(unittest.TestCase):
+    """TestBase Class"""
 
     def test_module_docstring(self):
         """
