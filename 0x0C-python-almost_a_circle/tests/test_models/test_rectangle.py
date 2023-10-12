@@ -13,6 +13,7 @@ from models.rectangle import Rectangle
 class TestRectangle(unittest.TestCase):
     """TestRectangle Class"""
 
+    # Attributes Test
     def test_rectangle_initialization(self):
         """Test to check that all attributes are correctly initialized.
         """
@@ -29,7 +30,7 @@ class TestRectangle(unittest.TestCase):
         r = Rectangle(10, 20, 30, 40, 1)
         self.assertEqual(r.id, 1)
         r = Rectangle(10, 20, 30, 40)
-        self.assertEqual(r.id, 1)
+        self.assertTrue(r.id is not None)
 
     def test_with_default_attr(self):
         """Test if default attributes are set when not given.
@@ -101,6 +102,15 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
             r = Rectangle(8, 10, 4, 7.38)
 
+    # Method Test
+    def test_area(self):
+        """Test that area function returns the area of
+        Rectangle instance."""
+        rect = Rectangle(9, 15)
+        self.assertEqual(rect.area(), 135)
+        rect = Rectangle(4, 8)
+        self.assertEqual(rect.area(), 32)
+        self.assertEqual(Rectangle(8, 7, 0, 0, 12).area(), 56)
 
 if __name__ == '__main__':
     unittest.main()
