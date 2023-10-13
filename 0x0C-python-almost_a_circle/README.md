@@ -165,6 +165,29 @@
 	 ###
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+8. [Update #0](./models/rectangle.py) : Update the class `Rectangle` by adding the public method `def update(self, *args):` that assigns an argument to each attribute:
+	- 1st argument should be the `id` attribute
+	- 2nd argument should be the `width` attribute
+	- 3rd argument should be the `height` attribute
+	- 4th argument should be the `x` attribute
+	- 5th argument should be the `y` attribute
+- **This type of argument is called a “no-keyword argument” - Argument order is super important.**
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./7-main.py 
+	[Rectangle] (1) 10/10 - 10/10
+	[Rectangle] (89) 10/10 - 10/10
+	[Rectangle] (89) 10/10 - 2/10
+	[Rectangle] (89) 10/10 - 2/3
+	[Rectangle] (89) 4/10 - 2/3
+	[Rectangle] (89) 4/5 - 2/3
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_rectangle.py
+	.............
+	----------------------------------------------------------------------
+	Ran 13 tests in 0.002s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
@@ -177,7 +200,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 8. Update #0 | [models/rectangle.py](./models/rectangle.py) |
 | 9. Update #1 | [models/rectangle.py](./models/rectangle.py) |
 | 10. And now, the Square! | [models/square.py](./models/square.py) |
 | 11. Square size | [models/square.py](./models/square.py) |
