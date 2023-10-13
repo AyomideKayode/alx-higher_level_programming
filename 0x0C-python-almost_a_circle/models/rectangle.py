@@ -13,9 +13,10 @@ def display(self): prints Rectangle instance to stdout with the `#` character
 :- improve display method to take care of x and y.
 Update Rectangle class by overriding the __str__ method
 so that it returns "[Rectangle] (<id>) <x>/<y> - <width>/<height>"
-Add the public method: def update(self, *args):
-that assigns an argument to each attribute in strict order:
-arg1=id, arg2=width, arg3=height, arg4=x, arg5=y
+Update public method: def update(self, *args, **kwargs):
+that assigns a key/value argument to attributes: if *args,
+set attrs in this order arg1=id, arg2=width, arg3=height, arg4=x, arg5=y
+if no args given, set according to kwargs.
 """
 
 
@@ -134,11 +135,10 @@ class Rectangle(Base):
             self.__width, self.__height))
 
     # *Args
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assign arguments to attributes in the order:
-        1st argument: id attribute, 2nd argument: width attribute,
-        3rd argument: height attribute, 4th argument: x attribute,
-        5th argument: y attribute."""
+        args1: id, args2: width, args3: height, args4: x, args5: y
+        or kwargs if args not given."""
         if args:
             if len(args) >= 1:
                 self.id = args[0]
@@ -150,3 +150,9 @@ class Rectangle(Base):
                 self.x = args[3]
             if len(args) >= 5:
                 self.y = args[4]
+        else:
+            keys = ['id', 'width', 'height', 'x', 'y']
+            if kwargs is not None:
+                for key, value in kwargs.items():
+                    if key in keys:
+                        setattr(self, key, value)
