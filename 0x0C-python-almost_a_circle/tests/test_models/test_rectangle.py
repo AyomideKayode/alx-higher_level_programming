@@ -126,7 +126,16 @@ class TestRectangle(unittest.TestCase):
 
     def test_display_with_xy(self):
         rect = Rectangle(4, 3, 2, 1)
-        expected_output = "####\n####\n####\n"
+        expected_output = "\n  ####\n  ####\n  ####\n"
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        rect.display()
+        sys.stdout = sys.__stdout__  # Restore stdout
+        self.assertEqual(captured_output.getvalue(), expected_output)
+
+        rect = Rectangle(5, 3, 3, 4)
+        expected_output = "\n\n\n\n   #####\n   #####\n   #####\n"
         captured_output = StringIO()
         sys.stdout = captured_output
 
