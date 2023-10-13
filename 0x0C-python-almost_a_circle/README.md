@@ -133,6 +133,19 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+6. [__str__](./models/rectangle.py) : Update the class `Rectangle` by overriding the `__str__` method so that it returns `[Rectangle] (<id>) <x>/<y> - <width>/<height>`
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./5-main.py 
+	[Rectangle] (12) 2/1 - 4/6
+	[Rectangle] (1) 1/0 - 5/5
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_rectangle.py
+	............
+	----------------------------------------------------------------------
+	Ran 12 tests in 0.002s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
@@ -145,7 +158,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 6. __str__ | [models/rectangle.py](./models/rectangle.py) |
 | 7. Display #1 | [models/rectangle.py](./models/rectangle.py) |
 | 8. Update #0 | [models/rectangle.py](./models/rectangle.py) |
 | 9. Update #1 | [models/rectangle.py](./models/rectangle.py) |
