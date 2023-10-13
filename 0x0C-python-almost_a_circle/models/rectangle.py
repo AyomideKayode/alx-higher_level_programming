@@ -29,6 +29,8 @@ class Rectangle(Base):
     Inherited attribute of: id
     Class attributes of:
         __width, __height, __x & __y
+    Public methods of:
+        area(), display(), __str__, update(*args, **kwargs)
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)  # call superclass constructor with id parameter
