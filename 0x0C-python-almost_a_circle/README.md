@@ -188,6 +188,28 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+9. [Update #1](./models/rectangle.py) : Update the class `Rectangle` by updating the public method `def update(self, *args):` by changing the prototype to `update(self, *args, **kwargs)` that assigns a key/value argument to attributes:
+
+	- `**kwargs` can be thought of as a double pointer to a dictionary: key/value
+		- As Python doesn’t have pointers, `**kwargs` is not literally a double pointer – describing it as such is just a way of explaining its behavior in terms you’re already familiar with
+	- `**kwargs` must be skipped if `*args` exists and is not empty
+	- Each key in this dictionary represents an attribute to the instance
+- **This type of argument is called a “key-worded argument”. Argument order is not important.**
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./8-main.py 
+	[Rectangle] (1) 10/10 - 10/10
+	[Rectangle] (1) 10/10 - 10/1
+	[Rectangle] (1) 2/10 - 1/1
+	[Rectangle] (89) 3/1 - 2/1
+	[Rectangle] (89) 1/3 - 4/2
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_rectangle.py
+	..............
+	----------------------------------------------------------------------
+	Ran 14 tests in 0.003s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
@@ -200,7 +222,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 9. Update #1 | [models/rectangle.py](./models/rectangle.py) |
 | 10. And now, the Square! | [models/square.py](./models/square.py) |
 | 11. Square size | [models/square.py](./models/square.py) |
 | 12. Square update | [models/square.py](./models/square.py) |
