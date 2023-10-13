@@ -2,19 +2,20 @@
 
 """
 Rectangle Class Module that inherits from Base:
+
+Init Superclass' `id` (Base)
 Private instance attributes, each with its own public getter and setter:
-__width -> width, __height -> height
-__x -> x, __y -> y
+__width -> width, __height -> height, __x -> x, __y -> y
 Class constructor: def __init__(self, width, height, x=0, y=0, id=None):
-Call the super class with id -
-this super call will use the logic of the __init__ of the Base class
-Assign each argument width, height, x and y to the right attribute
-Update with public methods of area and display:
+Contain public methods of area and display:
 def area(self): that returns the area value of the Rectangle instance
-def display(self): prints in stdout the Rectangle instance with the character #
-improve display method to take care of x and y.
+def display(self): prints Rectangle instance to stdout with the `#` character
+:- improve display method to take care of x and y.
 Update Rectangle class by overriding the __str__ method
 so that it returns "[Rectangle] (<id>) <x>/<y> - <width>/<height>"
+Add the public method: def update(self, *args):
+that assigns an argument to each attribute in strict order:
+arg1=id, arg2=width, arg3=height, arg4=x, arg5=y
 """
 
 
@@ -131,3 +132,21 @@ class Rectangle(Base):
         return ("[{:s}] ({}) {}/{} - {}/{}".format(
             self.__class__.__name__, self.id, self.__x, self.__y,
             self.__width, self.__height))
+
+    # *Args
+    def update(self, *args):
+        """Assign arguments to attributes in the order:
+        1st argument: id attribute, 2nd argument: width attribute,
+        3rd argument: height attribute, 4th argument: x attribute,
+        5th argument: y attribute."""
+        if args:
+            if len(args) >= 1:
+                self.id = args[0]
+            if len(args) >= 2:
+                self.width = args[1]
+            if len(args) >= 3:
+                self.height = args[2]
+            if len(args) >= 4:
+                self.x = args[3]
+            if len(args) >= 5:
+                self.y = args[4]
