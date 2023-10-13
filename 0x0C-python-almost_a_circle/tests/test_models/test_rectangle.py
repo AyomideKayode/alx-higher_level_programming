@@ -159,7 +159,7 @@ class TestRectangle(unittest.TestCase):
         expected_output = '[Rectangle] (5) 3/4 - 1/2'
         self.assertEqual(str(rect), expected_output)
 
-    def test_update(self):
+    def test_update_with_args(self):
         """Test method: update(*args)
         """
         rect = Rectangle(4, 3, 2, 1, 42)
@@ -188,6 +188,24 @@ class TestRectangle(unittest.TestCase):
             rect.update(87, 1, 2, 3, "Julien")
         with self.assertRaisesRegex(ValueError, "y must be >= 0"):
             rect.update(45, 1, 2, 3, -6)
+
+    def test_update_with_kwargs(self):
+        """Test method: update(**kwargs)
+        """
+        rect = Rectangle(4, 3, 2, 1, 42)
+        rect.update(id=79, width=5, height=6, x=7, y=8)
+        self.assertEqual(str(rect), '[Rectangle] (79) 7/8 - 5/6')
+
+        rect.update(nokey=1000, invalid=2000, testing=3000, id=4000)
+        # Check that valid attributes are updated correctly
+        self.assertEqual(rect.id, 4000)
+        # Check that unexpected kwargs are ignored and do not affect attributes
+        self.assertEqual(rect.width, 5)
+        self.assertEqual(rect.height, 6)
+        self.assertEqual(rect.x, 7)
+        self.assertEqual(rect.y, 8)
+        with self.assertRaises(ValueError):
+            rect.update(id=99, width=-5, height="Kante", x=3, y="Yktv")
 
 
 if __name__ == '__main__':
