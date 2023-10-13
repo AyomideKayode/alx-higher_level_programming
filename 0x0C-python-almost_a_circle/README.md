@@ -210,7 +210,52 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+10. [And now, the Square!](./models/square.py) : Write the class `Square` that inherits from `Rectangle`:
+	- In the file `models/square.py`
+	- Class `Square` inherits from `Rectangle`
+	- Class constructor: `def __init__(self, size, x=0, y=0, id=None):`:
+		- Call the super class with `id`, `x`, `y`, `width` and `height` - this super call will use the logic of the `__init__` of the `Rectangle` class. The `width` and `height` must be assigned to the value of `size`
+		- You must not create new attributes for this class, use all attributes of `Rectangle` - As reminder: a Square is a Rectangle with the same width and height
+		- All `width`, `height`, `x` and `y` validation must inherit from `Rectangle` - same behavior in case of wrong data
+	- The overloading `__str__` method should return `[Square] (<id>) <x>/<y> - <size>` - in our case, `width` or `height`
+- <em>As you know, a Square is a special Rectangle, so it makes sense this class Square inherits from Rectangle. Now you have a Square class who has the same attributes and same methods.</em>
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./9-main.py 
+	[Square] (1) 0/0 - 5
+	25
+	#####
+	#####
+	#####
+	#####
+	#####
+	---
+	[Square] (2) 2/0 - 2
+	4
+	  ##
+	  ##
+	---
+	[Square] (3) 1/3 - 3
+	9
 
+
+
+	 ###
+	 ###
+	 ###
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_square.py
+	......
+	----------------------------------------------------------------------
+	Ran 6 tests in 0.001s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest discover tests
+	............................
+	----------------------------------------------------------------------
+	Ran 28 tests in 0.004s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
@@ -222,7 +267,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 10. And now, the Square! | [models/square.py](./models/square.py) |
 | 11. Square size | [models/square.py](./models/square.py) |
 | 12. Square update | [models/square.py](./models/square.py) |
 | 13. Rectangle instance to dictionary representation | [models/rectangle.py](./models/rectangle.py) |
