@@ -115,6 +115,8 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(Rectangle(8, 7, 0, 0, 12).area(), 56)
 
     def test_display_without_xy(self):
+        """Test the display method with just width and height.
+        """
         rect = Rectangle(3, 2)
         expected_output = "###\n###\n"
         captured_output = StringIO()
@@ -125,6 +127,8 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(captured_output.getvalue(), expected_output)
 
     def test_display_with_xy(self):
+        """Test the display method with all attributes.
+        """
         rect = Rectangle(4, 3, 2, 1)
         expected_output = "\n  ####\n  ####\n  ####\n"
         captured_output = StringIO()
@@ -144,6 +148,9 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(captured_output.getvalue(), expected_output)
 
     def test_str_print(self):
+        """Test the __str__ method to verify that it prints out the string
+        reprsentation of the attributes.
+        """
         rect = Rectangle(4, 3, 2, 1, 42)
         expected_output = "[Rectangle] (42) 2/1 - 4/3"
         self.assertEqual(str(rect), expected_output)
@@ -151,6 +158,36 @@ class TestRectangle(unittest.TestCase):
         rect = Rectangle(1, 2, 3, 4, 5)
         expected_output = '[Rectangle] (5) 3/4 - 1/2'
         self.assertEqual(str(rect), expected_output)
+
+    def test_update(self):
+        """Test method: update(*args)
+        """
+        rect = Rectangle(4, 3, 2, 1, 42)
+        rect.update(99, 5, 6, 7, 8)
+        self.assertEqual(rect.id, 99)
+        self.assertEqual(rect.width, 5)
+        self.assertEqual(rect.height, 6)
+        self.assertEqual(rect.x, 7)
+        self.assertEqual(rect.y, 8)
+
+        rect = Rectangle(1, 2, 3, 4, 5)
+        rect.update(63, 9, 10, 5, 6)
+        self.assertEqual(str(rect), '[Rectangle] (63) 5/6 - 9/10')
+        rect.update()
+        self.assertEqual(str(rect), '[Rectangle] (63) 5/6 - 9/10')
+        rect.update(74)
+        self.assertEqual(str(rect), '[Rectangle] (74) 5/6 - 9/10')
+        rect.update(85, 1)
+        self.assertEqual(str(rect), '[Rectangle] (85) 5/6 - 1/10')
+        rect.update(14, 1, 2)
+        self.assertEqual(str(rect), '[Rectangle] (14) 5/6 - 1/2')
+        rect.update(99, 1, 2, 3, 4)
+        self.assertEqual(str(rect), '[Rectangle] (99) 3/4 - 1/2')
+        """Test invalid *args"""
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            rect.update(87, 1, 2, 3, "Julien")
+        with self.assertRaisesRegex(ValueError, "y must be >= 0"):
+            rect.update(45, 1, 2, 3, -6)
 
 
 if __name__ == '__main__':
