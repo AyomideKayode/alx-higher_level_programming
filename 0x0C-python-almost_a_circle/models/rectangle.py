@@ -9,8 +9,9 @@ Class constructor: def __init__(self, width, height, x=0, y=0, id=None):
 Call the super class with id -
 this super call will use the logic of the __init__ of the Base class
 Assign each argument width, height, x and y to the right attribute
-Update with public method that returns the area value of the Rectangle instance
-def area(self):
+Update with public methods of area and display:
+def area(self): that returns the area value of the Rectangle instance
+def display(self): prints in stdout the Rectangle instance with the character #
 """
 
 
@@ -104,8 +105,16 @@ class Rectangle(Base):
         # update private instance attribute
         self.__y = value
 
-    # Public Method: Area
+    # Public Methods:
+    # Area
     def area(self):
         """Calculate and returns the area of the Rectangle instance.
         """
         return (self.__width * self.__height)
+
+    # Display
+    def display(self):
+        """Function that display(print) to stdout
+        the Rectangle instance with the `#` character."""
+        for i in range(self.__height):
+            print("#" * self.__width)
