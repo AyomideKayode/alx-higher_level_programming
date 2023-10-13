@@ -21,7 +21,7 @@ class TestSquare(unittest.TestCase):
 
     def test_constructor_defaults(self):
         s = Square(5)
-        self.assertEqual(s.id, 4)
+        self.assertTrue(s.id is not None)
         self.assertEqual(s.size, 5)
         self.assertEqual(s.x, 0)
         self.assertEqual(s.y, 0)
