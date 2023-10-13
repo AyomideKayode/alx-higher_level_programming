@@ -12,6 +12,8 @@ Assign each argument width, height, x and y to the right attribute
 Update with public methods of area and display:
 def area(self): that returns the area value of the Rectangle instance
 def display(self): prints in stdout the Rectangle instance with the character #
+Update Rectangle class by overriding the __str__ method
+so that it returns "[Rectangle] (<id>) <x>/<y> - <width>/<height>"
 """
 
 
@@ -118,3 +120,12 @@ class Rectangle(Base):
         the Rectangle instance with the `#` character."""
         for i in range(self.__height):
             print("#" * self.__width)
+
+    # __str__
+    def __str__(self):
+        """Return string representation of Rectangle class instance.
+        Format: [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        return ("[{:s}] ({}) {}/{} - {}/{}".format(
+            self.__class__.__name__, self.id, self.__x, self.__y,
+            self.__width, self.__height))
