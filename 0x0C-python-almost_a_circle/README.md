@@ -113,6 +113,26 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+5. [Display #0](./models/rectangle.py) : Update the class `Rectangle` by adding the public method `def display(self):` that prints in stdout the `Rectangle` instance with the character `#` - you don’t need to handle `x` and `y` here.
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./4-main.py 
+	####
+	####
+	####
+	####
+	####
+	####
+	---
+	##
+	##
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_rectangle.py
+	...........
+	----------------------------------------------------------------------
+	Ran 11 tests in 0.002s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
@@ -125,7 +145,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 5. Display #0 | [models/rectangle.py](./models/rectangle.py) |
 | 6. __str__ | [models/rectangle.py](./models/rectangle.py) |
 | 7. Display #1 | [models/rectangle.py](./models/rectangle.py) |
 | 8. Update #0 | [models/rectangle.py](./models/rectangle.py) |
