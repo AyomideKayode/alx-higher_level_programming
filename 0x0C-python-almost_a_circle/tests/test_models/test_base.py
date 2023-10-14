@@ -14,7 +14,6 @@ Base = base.Base
 Rectangle = rectangle.Rectangle
 
 
-
 class TestBase(unittest.TestCase):
     """TestBase Class"""
 
