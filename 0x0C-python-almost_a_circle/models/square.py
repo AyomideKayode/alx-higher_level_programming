@@ -38,6 +38,19 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
         self.size = size
 
+    @property
+    def size(self):
+        """Getter for Size.
+        Return: size."""
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """Setter for size. Same validations as width/height from superclass.
+        Raise exceptions where value is not an int or < 0."""
+        self.width = value
+        self.height = value
+
     def __str__(self):
         """
         Print out string representation of the Square instance.
