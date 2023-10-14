@@ -130,6 +130,41 @@ class TestBase(unittest.TestCase):
         expected_data = '[]'
         self.assertEqual(saved_data, expected_data)
 
+    def test_from_json_string(self):
+        """Test that checks the method's basic functionality with a JSON string
+        """
+        json_string = '[{"id": 1, "name": "Alice"}, {"id": 2, "name": "Bob"}]'
+        json_output = [{'id': 1, 'name': 'Alice'}, {'id': 2, 'name': 'Bob'}]
+        result = Base.from_json_string(json_string)
+        self.assertEqual(result, json_output)
+        json_string = '[{"id": 9, "width": 5, "height": 6, "x": 7, "y": 8}, \
+        {"id": 2, "width": 2, "height": 3, "x": 4, "y": 0}]'
+        json_output = Base.from_json_string(json_string)
+        self.assertEqual(len(json_output), 2)
+        self.assertTrue(type(json_output) is list)
+        self.assertTrue(type(json_output[0]) is dict)
+        self.assertTrue(type(json_output[1]) is dict)
+        self.assertEqual(json_output[0],
+                         {"id": 9, "width": 5, "height": 6, "x": 7, "y": 8})
+        self.assertEqual(json_output[1],
+                         {"id": 2, "width": 2, "height": 3, "x": 4, "y": 0})
+
+    def test_from_json_string_empty_string(self):
+        """Test that checks it with an empty string.
+        """
+        json_string = ''
+        json_output = []
+        result = Base.from_json_string(json_string)
+        self.assertEqual(result, json_output)
+
+    def test_from_json_string_none(self):
+        """Test that checks it with a None argument.
+        """
+        json_string = None
+        json_output = []
+        result = Base.from_json_string(json_string)
+        self.assertEqual(result, json_output)
+
 
 if __name__ == '__main__':
     unittest.main()
