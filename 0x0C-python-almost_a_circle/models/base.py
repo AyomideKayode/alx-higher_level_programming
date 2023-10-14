@@ -82,7 +82,8 @@ class Base:
             cls (class): The class (e.g., Rectangle or Square).
             **dictionary: A dictionary containing attribute-value pairs.
         Returns:
-        Base: An instance of the class with attributes set based on the dictionary.
+            Base: An instance of the class with attributes set
+            based on the dictionary.
         """
         if cls.__name__ == 'Rectangle':
             inert = cls(1, 1)  # Create a dummy Rectangle instance
