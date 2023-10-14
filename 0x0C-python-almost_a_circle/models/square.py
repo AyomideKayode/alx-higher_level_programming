@@ -24,6 +24,8 @@ class Square(Rectangle):
         y(self), y(self, value); area(self); display(self);
     Class Attribute:
         size
+    Class Method:
+        update(*args, **kwargs)
     """
     def __init__(self, size, x=0, y=0, id=None):
         """
@@ -59,3 +61,25 @@ class Square(Rectangle):
         """
         return ("[Square] ({}) {}/{} - {}".format(
             self.id, self.x, self.y, self.width))
+
+    def update(self, *args, **kwargs):
+        """Assign arguments or keyword args to attribute.
+        Args:
+            *args: positional arguments in this order - id, size, x, y.
+            **kwargs: keyword arguments to assign attributes (attribute=value).
+        """
+        if args:
+            if len(args) >= 1:
+                self.id = args[0]
+            if len(args) >= 2:
+                self.size = args[1]
+            if len(args) >= 3:
+                self.x = args[2]
+            if len(args) >= 4:
+                self.y = args[3]
+        else:
+            keys = ['id', 'size', 'x', 'y']
+            if kwargs is not None:
+                for key, value in kwargs.items():
+                    if key in keys:
+                        setattr(self, key, value)
