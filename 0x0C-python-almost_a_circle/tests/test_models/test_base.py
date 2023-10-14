@@ -6,6 +6,7 @@ Unittest for Base Class
 # run with python3 -m unittest tests/test_models/test_base.py
 """
 
+import os
 import unittest
 import json
 from models import base
@@ -200,6 +201,71 @@ class TestBase(unittest.TestCase):
         dictionary = {'id': 42, 'unsupported_attr': 'value'}
         with self.assertRaises(ValueError):
             Base.create(**dictionary)
+
+    def test_load_from_file_rectangle(self):
+        """Test load from file with the Rectangle instance.
+        """
+        # Create a JSON file with data for a Rectangle
+        data = '[{"id": 42, "width": 4, "height": 3, "x": 2, "y": 1}]'
+        filename = 'Rectangle.json'
+        with open(filename, 'w') as file:
+            file.write(data)
+
+        # Load instances from the file
+        instances = Rectangle.load_from_file()
+
+        # Check the loaded instance
+        self.assertIsInstance(instances, list)
+        self.assertEqual(len(instances), 1)
+        rect = instances[0]
+        self.assertIsInstance(rect, Rectangle)
+        self.assertEqual(rect.id, 42)
+        self.assertEqual(rect.width, 4)
+        self.assertEqual(rect.height, 3)
+        self.assertEqual(rect.x, 2)
+        self.assertEqual(rect.y, 1)
+
+        # Clean up the created file
+        os.remove(filename)
+
+    def test_load_from_file_square(self):
+        """Test load from file with the Rectangle instance.
+        """
+        # Create a JSON file with data for a Square
+        data = '[{"id": 42, "size": 5, "x": 2, "y": 3}]'
+        filename = 'Square.json'
+        with open(filename, 'w') as file:
+            file.write(data)
+
+        # Load instances from the file
+        instances = Square.load_from_file()
+
+        # Check the loaded instance
+        self.assertIsInstance(instances, list)
+        self.assertEqual(len(instances), 1)
+        s = instances[0]
+        self.assertIsInstance(s, Square)
+        self.assertEqual(s.id, 42)
+        self.assertEqual(s.size, 5)
+        self.assertEqual(s.x, 2)
+        self.assertEqual(s.y, 3)
+
+        # Clean up the created file, if you'd like
+        # os.remove(filename)
+
+    def test_load_from_file_none(self):
+        """Test load from None file"""
+        Rectangle.save_to_file(None)
+        rect = Rectangle.load_from_file()
+        self.assertEqual(type(rect), list)
+        self.assertEqual(len(rect), 0)
+
+    def test_load_from_file_empty(self):
+        """Test load from empty file"""
+        Rectangle.save_to_file([])
+        rect = Rectangle.load_from_file()
+        self.assertEqual(type(rect), list)
+        self.assertEqual(len(rect), 0)
 
 
 if __name__ == '__main__':
