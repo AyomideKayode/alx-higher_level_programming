@@ -71,6 +71,25 @@ class TestBase(unittest.TestCase):
         switch.id = 42
         self.assertEqual(42, switch.id)
 
+    def test_to_json_string(self):
+        list_of_dicts = [{'id': 1, 'name': 'Joy'}, {'id': 2, 'name': 'Bob'}]
+        output = '[{"id": 1, "name": "Joy"}, {"id": 2, "name": "Bob"}]'
+        result = Base.to_json_string(list_of_dicts)
+        self.assertEqual(result, output)
+        self.assertTrue(type(result) == str)
+
+    def test_to_json_string_empty_list(self):
+        list_of_dicts = []
+        expected_output = '[]'
+        json_str = Base.to_json_string(list_of_dicts)
+        self.assertEqual(json_str, expected_output)
+
+    def test_to_json_string_none(self):
+        list_of_dicts = None
+        expected_output = '[]'
+        json_str = Base.to_json_string(list_of_dicts)
+        self.assertEqual(json_str, expected_output)
+
 
 if __name__ == '__main__':
     unittest.main()
