@@ -13,10 +13,12 @@ def display(self): prints Rectangle instance to stdout with the `#` character
 :- improve display method to take care of x and y.
 Update Rectangle class by overriding the __str__ method
 so that it returns "[Rectangle] (<id>) <x>/<y> - <width>/<height>"
-Update public method: def update(self, *args, **kwargs):
+Contain public method: def update(self, *args, **kwargs):
 that assigns a key/value argument to attributes: if *args,
 set attrs in this order arg1=id, arg2=width, arg3=height, arg4=x, arg5=y
 if no args given, set according to kwargs.
+Add public method def to_dictionary(self):
+that returns the dictionary representation of a Rectangle.
 """
 
 
@@ -158,3 +160,16 @@ class Rectangle(Base):
                 for key, value in kwargs.items():
                     if key in keys:
                         setattr(self, key, value)
+
+    def to_dictionary(self):
+        """Function to return dictionary representation of Rectangle instance.
+        Returns:
+            dict: Dictionary containing id, width, height, x, and y.
+        """
+        return {
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
+        }
