@@ -378,8 +378,24 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+17. [JSON string to dictionary](./models/base.py) :
+- Update the class `Base` by adding the static method `def from_json_string(json_string):` that returns the list of the JSON string representation `json_string`:
+	- `json_string` is a string representing a list of dictionaries
+	- If `json_string` is `None` or empty, return an empty list
+	- Otherwise, return the list represented by `json_string`
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./16-main.py 
+	[<class 'list'>] [{'id': 89, 'width': 10, 'height': 4}, {'id': 7, 'width': 1, 'height': 7}]
+	[<class 'str'>] [{"id": 89, "width": 10, "height": 4}, {"id": 7, "width": 1, "height": 7}]
+	[<class 'list'>] [{'id': 89, 'width': 10, 'height': 4}, {'id': 7, 'width': 1, 'height': 7}]
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_base.py
+	.................
+	----------------------------------------------------------------------
+	Ran 17 tests in 0.011s
 
-
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
@@ -387,6 +403,5 @@
 
 | Task | File |
 | ---- | ---- |
-| 17. JSON string to dictionary | [models/base.py](./models/base.py) |
 | 18. Dictionary to Instance | [models/base.py](./models/base.py) |
 | 19. File to instances | [models/base.py](./models/base.py) |
