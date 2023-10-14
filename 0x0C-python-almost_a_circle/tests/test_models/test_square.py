@@ -65,16 +65,23 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(type(s), Square)
 
     def test_size_property_invalid_type(self):
+        """Test that errors are raised when invalid types are passed as size.
+        """
         s = Square(12)
         with self.assertRaises(TypeError):
             s.size = "who-dey"
 
     def test_size_property_invalid_value(self):
+        """Test that errors are raised when invalid values are passed as size.
+        """
         s = Square(6)
         with self.assertRaises(ValueError):
             s.size = -2
 
     def test_update_with_args(self):
+        """Test that the Square instance attributes are
+        updated properly with args.
+        """
         s = Square(5, 2, 3, 42)
         s.update(99, 7, 8, 9)
         self.assertEqual(s.id, 99)
@@ -83,6 +90,9 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(s.y, 9)
 
     def test_update_with_kwargs(self):
+        """Test that the Square instance attributes are
+        updated properly when args aren't provided.
+        """
         s = Square(5, 2, 3, 42)
         s.update(size=7, x=8, y=9)
         self.assertEqual(s.size, 7)
@@ -90,11 +100,43 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(s.y, 9)
 
     def test_size_property(self):
+        """Test that the Square instance attributes are aligning with
+        class attributes inherited from Parent class(Rectangle).
+        """
         s = Square(5)
         s.size = 10
         self.assertEqual(s.size, 10)
         self.assertEqual(s.width, 10)
         self.assertEqual(s.height, 10)
+
+    def test_to_dictionary(self):
+        """Test that function returns the dictionary representation of the
+        Square instance.
+        """
+        s = Square(5, 2, 3, 42)
+        expected_output = {
+            'id': 42,
+            'size': 5,
+            'x': 2,
+            'y': 3
+        }
+        self.assertEqual(s.to_dictionary(), expected_output)
+        s.update(99, 7, 8, 9)
+        result = s.to_dictionary()
+        expected_output = {
+            'id': 99,
+            'size': 7,
+            'x': 8,
+            'y': 9
+        }
+        self.assertEqual(result, expected_output)
+
+    def test_to_dictionary_type(self):
+        """Test that the Square instance initialized is actually a dict type.
+        """
+        s = Square(5, 2, 3, 42)
+        result = s.to_dictionary()
+        self.assertIsInstance(result, dict)
 
 
 if __name__ == '__main__':
