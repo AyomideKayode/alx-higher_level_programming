@@ -7,7 +7,12 @@ Unittest for Base Class
 """
 
 import unittest
-from models.base import Base
+import json
+from models import base
+from models import rectangle
+Base = base.Base
+Rectangle = rectangle.Rectangle
+
 
 
 class TestBase(unittest.TestCase):
@@ -89,6 +94,42 @@ class TestBase(unittest.TestCase):
         expected_output = '[]'
         json_str = Base.to_json_string(list_of_dicts)
         self.assertEqual(json_str, expected_output)
+
+    def test_save_to_file(self):
+        """Test save to file with instance that inherited from Base.
+        """
+        r = Rectangle(10, 7, 2, 8, 99)
+        r2 = Rectangle(2, 4, 2, 2, 98)
+        Rectangle.save_to_file([r, r2])
+        with open("Rectangle.json", "r") as file:
+            self.assertEqual(
+                json.dumps([r.to_dictionary(), r2.to_dictionary()]),
+                file.read())
+
+    def test_save_to_file_empty_list(self):
+        """Test if empty list is given to be saved.
+        """
+        # Create an empty list
+        list_of_objs = []
+        # Save the empty list to a file
+        filename = 'Rectangle.json'
+        Rectangle.save_to_file(list_of_objs)
+        # Read the saved file
+        with open(filename, 'r') as my_file:
+            saved_data = my_file.read()
+        expected_data = '[]'  # Verify the saved data
+        self.assertEqual(saved_data, expected_data)
+
+    def test_save_to_file_none(self):
+        # Save None to a file
+        filename = 'Rectangle.json'
+        Rectangle.save_to_file(None)
+        # Read the saved file
+        with open(filename, 'r') as my_file:
+            saved_data = my_file.read()
+        # Verify the saved data
+        expected_data = '[]'
+        self.assertEqual(saved_data, expected_data)
 
 
 if __name__ == '__main__':
