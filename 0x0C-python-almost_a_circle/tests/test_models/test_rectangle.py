@@ -26,6 +26,12 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r.y, 3)
         self.assertEqual(r.id, 1)
 
+    def test_class(self):
+        """Test that the Rectangle instance class is initialized.
+        """
+        rect = Rectangle(8, 11, 2, 3, 9)
+        self.assertEqual(type(rect), Rectangle)
+
     def test_constructor_with_id_and_without(self):
         """Test to check that the Base id parameter is set upon
         initialization if provided and if not."""
@@ -88,21 +94,21 @@ class TestRectangle(unittest.TestCase):
         """Test attributes with float and string values.
         """
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
-            r = Rectangle("invalid", 6)
+            rect = Rectangle("invalid", 6)
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
-            r = Rectangle(8.27, 15)
+            rect = Rectangle(8.27, 15)
         with self.assertRaisesRegex(TypeError, "height must be an integer"):
-            r = Rectangle(3, "Fave")
+            rect = Rectangle(3, "Fave")
         with self.assertRaisesRegex(TypeError, "height must be an integer"):
-            r = Rectangle(4, 6.45)
+            rect = Rectangle(4, 6.45)
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
-            r = Rectangle(3, 5, "square")
+            rect = Rectangle(3, 5, "square")
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
-            r = Rectangle(4, 9, 2.93)
+            rect = Rectangle(4, 9, 2.93)
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
-            r = Rectangle(7, 18, 4, "triangle")
+            rect = Rectangle(7, 18, 4, "triangle")
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
-            r = Rectangle(8, 10, 4, 7.38)
+            rect = Rectangle(8, 10, 4, 7.38)
 
     # Method Test
     def test_area(self):
@@ -206,6 +212,29 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(rect.y, 8)
         with self.assertRaises(ValueError):
             rect.update(id=99, width=-5, height="Kante", x=3, y="Yktv")
+
+    def test_to_dictionary_type(self):
+        """Test that the result of function is actually a dictionary type.
+        """
+        rect = Rectangle(4, 3, 2, 1, 42)
+        result = rect.to_dictionary()
+        self.assertIsInstance(result, dict)
+
+    def test_to_dictionary(self):
+        """Test to verify that function returns dictionary representation
+        of the Rectangle instance.
+        """
+        rect = Rectangle(4, 3, 2, 1, 42)
+        rect.update(99, 7, 8, 9)
+        result = rect.to_dictionary()
+        expected_output = {
+            'id': 99,
+            'width': 7,
+            'height': 8,
+            'x': 9,
+            'y': 1
+        }
+        self.assertEqual(result, expected_output)
 
 
 if __name__ == '__main__':
