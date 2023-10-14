@@ -294,7 +294,30 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+13. [Rectangle instance to dictionary representation](./models/rectangle.py) :
+	- Update the class `Rectangle` by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a `Rectangle`:
+	- This dictionary must contain:
+		- `id`
+		- `width`
+		- `height`
+		- `x`
+		- `y`
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./12-main.py 
+	[Rectangle] (1) 1/9 - 10/2
+	{'id': 1, 'width': 10, 'height': 2, 'x': 1, 'y': 9}
+	<class 'dict'>
+	[Rectangle] (2) 0/0 - 1/1
+	[Rectangle] (1) 1/9 - 10/2
+	False
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_rectangle.py
+	.................
+	----------------------------------------------------------------------
+	Ran 17 tests in 0.002s
 
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
@@ -307,7 +330,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 13. Rectangle instance to dictionary representation | [models/rectangle.py](./models/rectangle.py) |
 | 14. Square instance to dictionary representation | [models/square.py](./models/square.py) |
 | 15. Dictionary to JSON string | [models/base.py](./models/base.py) |
 | 16. JSON string to file | [models/base.py](./models/base.py) |
