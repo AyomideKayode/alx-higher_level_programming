@@ -5,6 +5,9 @@ Square Class Module that inherits from Rectangle:
 Inits superclass' id, width (as size), height (as size), x, y
 Class constructor: __init__(self, size, x=0, y=0, id=None)
 Contains public attribute size
+Contain public method of:
+update(*args, **kwargs)
+to_dictionary(self)
 """
 
 
@@ -26,6 +29,7 @@ class Square(Rectangle):
         size
     Class Method:
         update(*args, **kwargs)
+        to_dictionary(self)
     """
     def __init__(self, size, x=0, y=0, id=None):
         """
@@ -83,3 +87,15 @@ class Square(Rectangle):
                 for key, value in kwargs.items():
                     if key in keys:
                         setattr(self, key, value)
+
+    def to_dictionary(self):
+        """Function to return dictionary representation of Square instance.
+        Returns:
+            dict: Dictionary containing id, size, x, and y.
+        """
+        return {
+            'id': self.id,
+            'size': self.width,  # size is the same as width
+            'x': self.x,
+            'y': self.y
+        }
