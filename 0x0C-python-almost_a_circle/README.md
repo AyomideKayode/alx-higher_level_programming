@@ -259,6 +259,44 @@
 11. [Square size](./models/square.py) : Update the class Square by adding the public getter and setter size
 	- The setter should assign (in this order) the width and the height - with the same value
 	- The setter should have the same value validation as the Rectangle for width and height - No need to change the exception error message (It should be the one from width)
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./10-main.py 
+	[Square] (1) 0/0 - 5
+	5
+	[Square] (1) 0/0 - 10
+	[TypeError] width must be an integer
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
+12. [Square update](./models/square.py) : Update the class `Square` by adding the public method `def update(self, *args, **kwargs)` that assigns attributes:
+	- `*args` is the list of arguments - no-keyworded arguments
+		- 1st argument should be the `id` attribute
+		- 2nd argument should be the `size` attribute
+		- 3rd argument should be the `x` attribute
+		- 4th argument should be the `y` attribute
+	- `**kwargs` can be thought of as a double pointer to a dictionary: key/value (keyworded arguments)
+	- `**kwargs` must be skipped if `*args` exists and is not empty
+	- Each key in this dictionary represents an attribute to the instance
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./11-main.py 
+	[Square] (1) 0/0 - 5
+	[Square] (10) 0/0 - 5
+	[Square] (1) 0/0 - 2
+	[Square] (1) 3/0 - 2
+	[Square] (1) 3/4 - 2
+	[Square] (1) 12/4 - 2
+	[Square] (1) 12/1 - 7
+	[Square] (89) 12/1 - 7
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_square.py
+	...........
+	----------------------------------------------------------------------
+	Ran 11 tests in 0.002s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
+
+
+
 
 
 
@@ -269,7 +307,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 12. Square update | [models/square.py](./models/square.py) |
 | 13. Rectangle instance to dictionary representation | [models/rectangle.py](./models/rectangle.py) |
 | 14. Square instance to dictionary representation | [models/square.py](./models/square.py) |
 | 15. Dictionary to JSON string | [models/base.py](./models/base.py) |
