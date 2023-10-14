@@ -64,6 +64,38 @@ class TestSquare(unittest.TestCase):
         s = Square(24)
         self.assertEqual(type(s), Square)
 
+    def test_size_property_invalid_type(self):
+        s = Square(12)
+        with self.assertRaises(TypeError):
+            s.size = "who-dey"
+
+    def test_size_property_invalid_value(self):
+        s = Square(6)
+        with self.assertRaises(ValueError):
+            s.size = -2
+
+    def test_update_with_args(self):
+        s = Square(5, 2, 3, 42)
+        s.update(99, 7, 8, 9)
+        self.assertEqual(s.id, 99)
+        self.assertEqual(s.size, 7)
+        self.assertEqual(s.x, 8)
+        self.assertEqual(s.y, 9)
+
+    def test_update_with_kwargs(self):
+        s = Square(5, 2, 3, 42)
+        s.update(size=7, x=8, y=9)
+        self.assertEqual(s.size, 7)
+        self.assertEqual(s.x, 8)
+        self.assertEqual(s.y, 9)
+
+    def test_size_property(self):
+        s = Square(5)
+        s.size = 10
+        self.assertEqual(s.size, 10)
+        self.assertEqual(s.width, 10)
+        self.assertEqual(s.height, 10)
+
 
 if __name__ == '__main__':
     unittest.main()
