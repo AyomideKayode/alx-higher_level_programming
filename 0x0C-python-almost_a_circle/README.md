@@ -418,9 +418,50 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+19. [File to instances](./models/base.py) : Update the class `Base` by adding the class method `def load_from_file(cls):` that returns a list of instances:
+	- The filename must be: `<Class name>.json` - example: `Rectangle.json`
+	- If the file doesn’t exist, return an empty list
+	- Otherwise, return a list of instances - the type of these instances depends on `cls` (current class using this method)
+	- You must use the from_json_string and `create` methods (implemented previously)
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./18-main.py
+	[139868627783520] [Rectangle] (1) 2/8 - 10/7
+	[139868627783576] [Rectangle] (2) 0/0 - 2/4
+	---
+	[139868627648584] [Rectangle] (1) 2/8 - 10/7
+	[139868627648640] [Rectangle] (2) 0/0 - 2/4
+	---
+	---
+	[139868627869824] [Square] (5) 0/0 - 5
+	[139868627871784] [Square] (6) 9/1 - 7
+	---
+	[139868627648752] [Square] (5) 0/0 - 5
+	[139868627648808] [Square] (6) 9/1 - 7
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_base.py
+	........................
+	----------------------------------------------------------------------
+	Ran 24 tests in 0.015s
 
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest discover tests
+	......................................................
+	----------------------------------------------------------------------
+	Ran 54 tests in 0.015s
 
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
+---
+### Environment
+* Language: Python 3.4.3
+    * OS: Ubuntu 14.04 LTS
+    * Compiler: python3
+    * Style guidelines:
+        - [PEP 8 (version 1.7)](https://www.python.org/dev/peps/pep-0008/)
 
-| Task | File |
-| ---- | ---- |
-| 19. File to instances | [models/base.py](./models/base.py) |
+---
+## Author
+
+- **<em>Website</em>** - [Ayomide Kayode](https://github.com/AyomideKayode)
+- **<em>ALX Software Engineering Program</em>** - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- **<em>Twitter</em>** - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
