@@ -396,12 +396,31 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+18. [Dictionary to Instance](./models/base.py) : Update the class `Base `by adding the class method `def create(cls, **dictionary):` that returns an instance with all attributes already set:
+	- **dictionary can be thought of as a double pointer to a dictionary
+	- To use the update method to assign all attributes, you must create a “dummy” instance before:
+		- Create a Rectangle or Square instance with “dummy” mandatory attributes (width, height, size, etc.)
+		- Call `update` instance method to this “dummy” instance to apply your real values
+	- You must use the method `def update(self, *args, **kwargs)`
+	- `**dictionary` must be used as `**kwargs` of the method `update`
+	- You are not allowed to use `eval`
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./17-main.py 
+	[Rectangle] (1) 1/0 - 3/5
+	[Rectangle] (1) 1/0 - 3/5
+	False
+	False
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_base.py
+	....................
+	----------------------------------------------------------------------
+	Ran 20 tests in 0.013s
 
-
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
 | Task | File |
 | ---- | ---- |
-| 18. Dictionary to Instance | [models/base.py](./models/base.py) |
 | 19. File to instances | [models/base.py](./models/base.py) |
