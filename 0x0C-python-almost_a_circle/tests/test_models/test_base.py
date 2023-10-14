@@ -10,8 +10,10 @@ import unittest
 import json
 from models import base
 from models import rectangle
+from models import square
 Base = base.Base
 Rectangle = rectangle.Rectangle
+Square = square.Square
 
 
 class TestBase(unittest.TestCase):
@@ -45,8 +47,9 @@ class TestBase(unittest.TestCase):
         """
         base_instance = Base()
         base_instance2 = Base()
-        self.assertEqual(base_instance.id, 1)
-        self.assertEqual(base_instance2.id, 2)
+        # updated to 3 & 4 respectivly because of Task 18
+        self.assertEqual(base_instance.id, 3)
+        self.assertEqual(base_instance2.id, 4)
 
     def test_id_assignment_with_string(self):
         """Test to check if the id attribute would work correctly when
@@ -164,6 +167,39 @@ class TestBase(unittest.TestCase):
         json_output = []
         result = Base.from_json_string(json_string)
         self.assertEqual(result, json_output)
+
+    def test_create_rectangle(self):
+        """Test to check the method's functionality for
+        creating instances of Rectangle class.
+        """
+        dictionary = {'id': 42, 'width': 4, 'height': 3, 'x': 2, 'y': 1}
+        r = Rectangle.create(**dictionary)
+        self.assertIsInstance(r, Rectangle)
+        self.assertEqual(r.id, 42)
+        self.assertEqual(r.width, 4)
+        self.assertEqual(r.height, 3)
+        self.assertEqual(r.x, 2)
+        self.assertEqual(r.y, 1)
+
+    def test_create_square(self):
+        """Test to check the method's functionality for
+        creating instances of Square class.
+        """
+        dictionary = {'id': 42, 'size': 5, 'x': 2, 'y': 3}
+        s = Square.create(**dictionary)
+        self.assertIsInstance(s, Square)
+        self.assertEqual(s.id, 42)
+        self.assertEqual(s.size, 5)
+        self.assertEqual(s.x, 2)
+        self.assertEqual(s.y, 3)
+
+    def test_create_unsupported_class(self):
+        """Test that checks if the method raises a ValueError
+        when trying to create an instance of an unsupported class.
+        """
+        dictionary = {'id': 42, 'unsupported_attr': 'value'}
+        with self.assertRaises(ValueError):
+            Base.create(**dictionary)
 
 
 if __name__ == '__main__':
