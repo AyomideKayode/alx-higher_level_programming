@@ -342,7 +342,25 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+15. [Dictionary to JSON string](./models/base.py) : JSON is one of the standard formats for sharing data representation.
+	- Update the class `Base` by adding the static method `def to_json_string(list_dictionaries):` that returns the JSON string representation of `list_dictionaries`:
+		- `list_dictionaries` is a list of dictionaries
+		- If `list_dictionaries` is `None` or empty, return the string: `"[]"`
+		- Otherwise, return the JSON string representation of `list_dictionaries`
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./14-main.py 
+	{'id': 1, 'width': 10, 'height': 7, 'x': 2, 'y': 8}
+	<class 'dict'>
+	[{"id": 1, "width": 10, "height": 7, "x": 2, "y": 8}]
+	<class 'str'>
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_base.py 
+	...........
+	----------------------------------------------------------------------
+	Ran 11 tests in 0.001s
 
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
@@ -353,7 +371,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 15. Dictionary to JSON string | [models/base.py](./models/base.py) |
 | 16. JSON string to file | [models/base.py](./models/base.py) |
 | 17. JSON string to dictionary | [models/base.py](./models/base.py) |
 | 18. Dictionary to Instance | [models/base.py](./models/base.py) |
