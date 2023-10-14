@@ -361,7 +361,23 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+16. [JSON string to file](./models/base.py) : Update the class `Base` by adding the class method `def save_to_file(cls, list_objs):` that writes the JSON string representation of `list_objs` to a file:
+	- `list_objs` is a list of instances who inherits of `Base` - example: - list of `Rectangle` or list of `Square` instances
+	- If `list_objs` is `None`, save an empty list
+	- The filename must be: `<Class name>.json` - example: `Rectangle.json`
+	- You must use the static method `to_json_string` <em>(created before)</em>
+	- You must overwrite the file if it already exists
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./15-main.py 
+	[{"id": 1, "width": 10, "height": 7, "x": 2, "y": 8}, {"id": 2, "width": 2, "height": 4, "x": 0, "y": 0}]
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_base.py
+	..............
+	----------------------------------------------------------------------
+	Ran 14 tests in 0.013s
 
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
@@ -371,7 +387,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 16. JSON string to file | [models/base.py](./models/base.py) |
 | 17. JSON string to dictionary | [models/base.py](./models/base.py) |
 | 18. Dictionary to Instance | [models/base.py](./models/base.py) |
 | 19. File to instances | [models/base.py](./models/base.py) |
