@@ -256,7 +256,9 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
-
+11. [Square size](./models/square.py) : Update the class Square by adding the public getter and setter size
+	- The setter should assign (in this order) the width and the height - with the same value
+	- The setter should have the same value validation as the Rectangle for width and height - No need to change the exception error message (It should be the one from width)
 
 
 
@@ -267,7 +269,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 11. Square size | [models/square.py](./models/square.py) |
 | 12. Square update | [models/square.py](./models/square.py) |
 | 13. Rectangle instance to dictionary representation | [models/rectangle.py](./models/rectangle.py) |
 | 14. Square instance to dictionary representation | [models/square.py](./models/square.py) |
