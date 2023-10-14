@@ -318,7 +318,30 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+14. [Square instance to dictionary representation](./models/square.py) :
+- Update the class `Square` by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a `Square`:
 
+- This dictionary must contain:
+	- `id`
+	- `size`
+	- `x`
+	- `y`
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./13-main.py 
+	[Square] (1) 2/1 - 10
+	{'id': 1, 'size': 10, 'x': 2, 'y': 1}
+	<class 'dict'>
+	[Square] (2) 1/0 - 1
+	[Square] (1) 2/1 - 10
+	False
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_square.py 
+	.............
+	----------------------------------------------------------------------
+	Ran 13 tests in 0.002s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 
 
 
@@ -330,7 +353,6 @@
 
 | Task | File |
 | ---- | ---- |
-| 14. Square instance to dictionary representation | [models/square.py](./models/square.py) |
 | 15. Dictionary to JSON string | [models/base.py](./models/base.py) |
 | 16. JSON string to file | [models/base.py](./models/base.py) |
 | 17. JSON string to dictionary | [models/base.py](./models/base.py) |
