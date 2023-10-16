@@ -267,6 +267,133 @@ class TestBase(unittest.TestCase):
         self.assertEqual(type(rect), list)
         self.assertEqual(len(rect), 0)
 
+    def test_save_to_file_csv_rectangle(self):
+        """Test to see that list of instances is serialized into CSV file.
+        """
+        # Create a list of Rectangle instances
+        r1 = Rectangle(4, 3, 2, 1, 42)
+        r2 = Rectangle(5, 4, 3, 2, 43)
+        instances = [r1, r2]
+
+        # Save the instances to a CSV file
+        filename = 'Rectangle.csv'
+        Base.save_to_file_csv(instances)
+
+        # Read the saved file
+        with open(filename, 'r', newline='') as my_file:
+            lines = my_file.readlines()
+
+        # Verify the saved data
+        expected_data = ['42,4,3,2,1\n', '43,5,4,3,2\n']
+        self.assertEqual(lines, expected_data)
+
+        # Clean up the created file (optional)
+        # os.remove(filename)
+
+    def test_save_to_file_csv_square(self):
+        """Test to see that list of instances is serialized into CSV file.
+        """
+        # Create a list of Square instances
+        s1 = Square(5, 2, 3, 42)
+        s2 = Square(6, 3, 4, 43)
+        instances = [s1, s2]
+
+        # Save the instances to a CSV file
+        filename = 'Square.csv'
+        Base.save_to_file_csv(instances)
+
+        # Read the saved file
+        with open(filename, 'r', newline='') as my_file:
+            lines = my_file.readlines()
+
+        # Verify the saved data
+        expected_data = ['42,5,2,3\n', '43,6,3,4\n']
+        self.assertEqual(lines, expected_data)
+
+        # Clean up the created file (optional)
+        # os.remove(filename)
+
+    def test_save_to_file_csv_empty_list(self):
+        # Create an empty list: nothing gets saved. Returns previous data.
+        instances = []
+
+        # Save the empty list to a CSV file
+        filename = 'Square.csv'
+        Base.save_to_file_csv(instances)
+
+        # Read the saved file
+        with open(filename, 'r', newline='') as my_file:
+            lines = my_file.readlines()
+
+        # Verify the saved data (should be data from the file before)
+        # no new changes
+        self.assertEqual(lines, ['42,5,2,3\n', '43,6,3,4\n'])
+
+        # Clean up the created file (optional)
+        # os.remove(filename)
+
+    def test_load_from_file_csv_rectangle(self):
+        """Test to see that list of instances is deserialized from a CSV file.
+        """
+        # Create a CSV file with data for Rectangle instances
+        data = '42,4,3,2,1\n43,5,4,3,2\n'
+        filename = 'Rectangle.csv'
+        with open(filename, 'w', newline='') as my_file:
+            my_file.write(data)
+
+        # Load instances from the file
+        instances = Rectangle.load_from_file_csv()
+
+        # Check the loaded instances
+        self.assertIsInstance(instances, list)
+        self.assertEqual(len(instances), 2)
+        r1 = instances[0]
+        r2 = instances[1]
+        self.assertIsInstance(r1, Rectangle)
+        self.assertIsInstance(r2, Rectangle)
+        self.assertEqual(r1.id, 42)
+        self.assertEqual(r1.width, 4)
+        self.assertEqual(r1.height, 3)
+        self.assertEqual(r1.x, 2)
+        self.assertEqual(r1.y, 1)
+        self.assertEqual(r2.id, 43)
+        self.assertEqual(r2.width, 5)
+        self.assertEqual(r2.height, 4)
+        self.assertEqual(r2.x, 3)
+        self.assertEqual(r2.y, 2)
+
+        # Clean up the created file (optional)
+        # os.remove(filename)
+
+    def test_load_from_file_csv_square(self):
+        # Create a CSV file with data for Square instances
+        data = '42,5,2,3\n43,6,3,4\n'
+        filename = 'Square.csv'
+        with open(filename, 'w', newline='') as my_file:
+            my_file.write(data)
+
+        # Load instances from the file
+        instances = Square.load_from_file_csv()
+
+        # Check the loaded instances
+        self.assertIsInstance(instances, list)
+        self.assertEqual(len(instances), 2)
+        s1 = instances[0]
+        s2 = instances[1]
+        self.assertIsInstance(s1, Square)
+        self.assertIsInstance(s2, Square)
+        self.assertEqual(s1.id, 42)
+        self.assertEqual(s1.size, 5)
+        self.assertEqual(s1.x, 2)
+        self.assertEqual(s1.y, 3)
+        self.assertEqual(s2.id, 43)
+        self.assertEqual(s2.size, 6)
+        self.assertEqual(s2.x, 3)
+        self.assertEqual(s2.y, 4)
+
+        # Clean up the created file (optional)
+        # os.remove(filename)
+
 
 if __name__ == '__main__':
     unittest.main()
