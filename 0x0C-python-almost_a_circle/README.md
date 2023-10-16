@@ -490,6 +490,8 @@
 	```
 	<img src="./main/Python-turtle-drawing.PNG" alt="result of turtle drawing" width=100%>
 
+	[Video Representation.](https://twitter.com/kazzy_wiz/status/1713976783542903117)
+
 - Additional info below: <em>(didn't need these because I was operating on Ubuntu - VsCode🤭 and I just made sure to install the Turtle graphics module with the command above in my Ubuntu terminal - see [pic](./main/turtle-install.PNG). Also, remember to `import turtle` in the `Base.py` file.)</em>
 	- Uncommented line in `/etc/ssh/ssh_config` that said `# ForwardX11 no` and change `no` to `yes`.
 	- Then added line `config.ssh.forward_agent = true` to my Vagrantfile in addition to `config.ssh.forward_x11 = true`.
