@@ -18,10 +18,16 @@ that returns the list of the JSON string representation json_string:
 Add class method def create(cls, **dictionary):
 that returns an instance with all attributes already set:
 Add class method def load_from_file(cls): that returns a list of instances:
+Add the class methods def save_to_file_csv(cls, list_objs):
+and def load_from_file_csv(cls): that serializes and deserializes in CSV:
+Has the same behavior as the JSON serialization/deserialization
+Format of the CSV:
+    Rectangle: <id>,<width>,<height>,<x>,<y>
+    Square: <id>,<size>,<x>,<y>
 """
 
 import json
-
+import csv
 
 class Base:
     """
@@ -115,4 +121,47 @@ class Base:
         except FileNotFoundError:
             pass
 
+        return instance_list
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Serialize list of instances to a CSV file.
+        Args:
+            cls (class): the class (Rectangle, Square, etc)
+            list_objs (list of instances) : list of instances to be serialized.
+        """
+        filename = '{}.csv'.format(cls.__name__)
+        with open(filename, 'w', newline='') as my_file:
+            writer = csv.writer(my_file)
+            for x in list_objs:
+                if cls.__name__ == "Rectangle":
+                    writer.writerow([x.id, x.width, x.height, x.x, x.y])
+                if cls.__name__ == "Square":
+                    writer.writerow([x.id, x.size, x.x, x.y])
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """Deserialize instances from a CSV file.
+        Returns:
+            list: list of instances.
+        """
+        instance_list = []
+        filename = '{}.csv'.format(cls.__name__)
+
+        with open(filename, 'r', newline='') as f:
+            reader = csv.reader(f)
+            for row in reader:
+                if cls.__name__ == "Rectangle":
+                    data = {"id": int(row[0]),
+                           "width": int(row[1]),
+                           "height": int(row[2]),
+                           "x": int(row[3]),
+                           "y": int(row[4])}
+                if cls.__name__ == "Square":
+                    data = {"id": int(row[0]),
+                           "size": int(row[1]),
+                           "x": int(row[2]),
+                           "y": int(row[3])}
+                instance = cls.create(**data)
+                instance_list.append(instance)
         return instance_list
