@@ -24,8 +24,11 @@ Has the same behavior as the JSON serialization/deserialization
 Format of the CSV:
     Rectangle: <id>,<width>,<height>,<x>,<y>
     Square: <id>,<size>,<x>,<y>
+Add the static method def draw(list_rectangles, list_squares):
+that opens a window and draws all the Rectangles and Squares:
 """
 
+import turtle
 import json
 import csv
 
@@ -166,3 +169,46 @@ class Base:
                 instance = cls.create(**data)
                 instance_list.append(instance)
         return instance_list
+
+# Turtle Graphics module task
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """Draw rectangles and squares using the Turtle graphics module.
+        Args:
+            list_rectangles (list): A list of Rectangle instances.
+            list_squares (list): A list of Square instances.
+        Returns:
+            None
+        """
+        # Create a Turtle screen
+        window = turtle.Screen()
+        window.bgcolor("white")
+
+        # Create Turtle object
+        pen = turtle.Turtle()
+        pen.speed(2)
+
+        # Draw rectangles
+        for rect in list_rectangles:
+            pen.penup()
+            pen.goto(rect.x, rect.y)
+            pen.pendown()
+            pen.color("blue")
+            for x in range(2):
+                pen.forward(rect.width)
+                pen.left(90)
+                pen.forward(rect.height)
+                pen.left(90)
+
+        # Draw Squares
+        for s_box in list_squares:
+            pen.penup()
+            pen.goto(s_box.x, s_box.y)
+            pen.pendown()
+            pen.color("red")
+            for y in range(4):
+                pen.forward(s_box.size)
+                pen.left(90)
+
+        # close Turtle graphics window when clicked.
+        window.exitonclick()
