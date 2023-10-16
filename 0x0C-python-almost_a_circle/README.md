@@ -479,7 +479,24 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+21. [Let's draw it](./models/base.py) : Update the class `Base` by adding the static method `def draw(list_rectangles, list_squares):` that opens a window and draws all the `Rectangles` and `Squares`:
+	- You must use the [Turtle graphics module](https://docs.python.org/3.0/library/turtle.html)
+	- To install it: `sudo apt-get install python3-tk`
+	- To make the GUI available outside your vagrant machine, add this line in your Vagrantfile: `config.ssh.forward_x11 = true`
+	- No constraints for color, shape etc… be creative!
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./101-main.py
+	.....(see below picture for result)
+	```
+	<img src="./main/Python-turtle-drawing.PNG" alt="result of turtle drawing" width=100%>
 
+- Additional info below: <em>(didn't need these because I was operating on Ubuntu - VsCode🤭 and I just made sure to install the Turtle graphics module with the command above in my Ubuntu terminal - see [pic](./main/turtle-install.PNG). Also, remember to `import turtle` in the `Base.py` file.)</em>
+	- Uncommented line in `/etc/ssh/ssh_config` that said `# ForwardX11 no` and change `no` to `yes`.
+	- Then added line `config.ssh.forward_agent = true` to my Vagrantfile in addition to `config.ssh.forward_x11 = true`.
+	- Halted my vm with `vagrant halt` and started it back up with `vagrant up --provision` then `vagrant ssh`.
+	- If you get an error that looks like /usr/bin/xauth: timeout in locking authority file /home/vagrant/.Xauthority, then enter `rm .Xauthority` (you may have to `sudo`).
+	- Logout and restart the vm with `vagrant up --provision`.
+	- Test with `xeyes`. If Xquartz is installed on the Mac OS it should open in an Xquartz window.
 ---
 ### Environment
 * Language: Python 3.4.3
