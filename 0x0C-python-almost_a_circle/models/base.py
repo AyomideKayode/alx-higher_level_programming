@@ -29,6 +29,7 @@ Format of the CSV:
 import json
 import csv
 
+
 class Base:
     """
     Base class to manage id attribute in all future classes
@@ -153,15 +154,15 @@ class Base:
             for row in reader:
                 if cls.__name__ == "Rectangle":
                     data = {"id": int(row[0]),
-                           "width": int(row[1]),
-                           "height": int(row[2]),
-                           "x": int(row[3]),
-                           "y": int(row[4])}
+                            "width": int(row[1]),
+                            "height": int(row[2]),
+                            "x": int(row[3]),
+                            "y": int(row[4])}
                 if cls.__name__ == "Square":
                     data = {"id": int(row[0]),
-                           "size": int(row[1]),
-                           "x": int(row[2]),
-                           "y": int(row[3])}
+                            "size": int(row[1]),
+                            "x": int(row[2]),
+                            "y": int(row[3])}
                 instance = cls.create(**data)
                 instance_list.append(instance)
         return instance_list
