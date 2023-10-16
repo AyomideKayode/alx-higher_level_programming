@@ -499,6 +499,35 @@
 	- If you get an error that looks like /usr/bin/xauth: timeout in locking authority file /home/vagrant/.Xauthority, then enter `rm .Xauthority` (you may have to `sudo`).
 	- Logout and restart the vm with `vagrant up --provision`.
 	- Test with `xeyes`. If Xquartz is installed on the Mac OS it should open in an Xquartz window.
+
+- When all is said and done, make sure the Unittests are passing succesfully:
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest discover tests
+	...........................................................
+	----------------------------------------------------------------------
+	Ran 59 tests in 0.031s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_base.py
+	.............................
+	----------------------------------------------------------------------
+	Ran 29 tests in 0.022s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_rectangle.py
+	.................
+	----------------------------------------------------------------------
+	Ran 17 tests in 0.002s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_square.py
+	.............
+	----------------------------------------------------------------------
+	Ran 13 tests in 0.002s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
 ---
 ### Environment
 * Language: Python 3.4.3
