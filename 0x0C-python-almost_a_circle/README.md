@@ -451,6 +451,35 @@
 	OK
 	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
 	```
+20. [JSON ok, but CSV?](./models/base.py) : Update the class `Base` by adding the class methods `def save_to_file_csv(cls, list_objs):` and `def load_from_file_csv(cls):` that serializes and deserializes in CSV:
+	- The filename must be: `<Class name>.csv` - example: `Rectangle.csv`
+	- Has the same behavior as the JSON serialization/deserialization
+	- Format of the CSV:
+		- Rectangle: `<id>,<width>,<height>,<x>,<y>`
+		- Square: `<id>,<size>,<x>,<y>`
+	```sh
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ ./100-main.py 
+	[140576089538344] [Rectangle] (1) 2/8 - 10/7
+	[140576089538400] [Rectangle] (2) 0/0 - 2/4
+	---
+	[140576089441392] [Rectangle] (1) 2/8 - 10/7
+	[140576089441336] [Rectangle] (2) 0/0 - 2/4
+	---
+	---
+	[140576089624648] [Square] (5) 0/0 - 5
+	[140576089626608] [Square] (6) 9/1 - 7
+	---
+	[140576089441560] [Square] (5) 0/0 - 5
+	[140576089441616] [Square] (6) 9/1 - 7
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ python3 -m unittest tests/test_models/test_base.py
+	.............................
+	----------------------------------------------------------------------
+	Ran 29 tests in 0.012s
+
+	OK
+	kazzywiz@Kazzywiz:~/alx-higher_level_programming/0x0C-python-almost_a_circle$ 
+	```
+
 ---
 ### Environment
 * Language: Python 3.4.3
