@@ -79,3 +79,9 @@ Namespaces are one honking great idea -- let's do more of those!
 - [0x04](./0x04-python-more_data_structures/) : More Data Structures: Set, Dictionary
 - [0x05](./0x05-python-exceptions/) : Exceptions
 - [0x06](./0x06-python-classes/) : Classes and Objects
+- [0x07](./0x07-python-test_driven_development/) : Test Driven Development
+- [0x08](./0x08-python-more_classes/) : More Classes
+- [0x09](./0x09-python-everything_is_object/) : Everything is Object
+- [0x0A](./0x0A-python-inheritance/) : Inheritance
+- [0x0B](./0x0B-python-input_output/) : Input and Output
+- [0x0C](./0x0C-python-almost_a_circle/) : Almost A Circle
