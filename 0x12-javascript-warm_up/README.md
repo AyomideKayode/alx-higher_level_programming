@@ -280,12 +280,38 @@ Write a script that prints the addition of 2 integers
 	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$
 	```
 
+10. [Factorial](./10-factorial.js) :
+
+Write a script that computes and prints a factorial
+
+- The first argument is integer (argument can be cast as integer) used for computing the factorial
+- Factorial of `NaN` is `1`
+- You must do it recursively
+- You must use a function
+- You must use `console.log(...)` to print all output
+- You are not allowed to use `var`
+
+	```sh
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./10-factorial.js 
+	1
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./10-factorial.js 4
+	24
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./10-factorial.js 89
+	1.6507955160908452e+136
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./10-factorial.js 333
+	Infinity
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ semistandard
+	semistandard: Semicolons For All! (https://github.com/standard/semistandard)
+	semistandard: Run `semistandard --fix` to automatically fix some problems.
+	/home/ayomide/alx-higher_level_programming/0x12-javascript-warm_up/10-factorial.js:4:19: Missing space before function parentheses. (space-before-function-paren)
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ 
+	```
 
 | Task                    | File                                                     |
 | ----------------------- | -------------------------------------------------------- |
 |                              |
 |                                   |
-| 10. Factorial           | [10-factorial.js](./10-factorial.js)                     |
+|                     |
 | 11. Second biggest!     | [11-second_biggest.js](./11-second_biggest.js)           |
 | 12. Object              | [12-object.js](./12-object.js)                           |
 | 13. Add file            | [13-add.js](./13-add.js)                                 |
