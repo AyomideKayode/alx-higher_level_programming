@@ -362,6 +362,20 @@ Write a function that returns the addition of 2 integers.
 	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$
 	```
 
+14. [Const or not const](./100-let_me_const.js) :
+
+Write a file that modifies the value of `myVar` to `333`
+
+```sh
+guillaume@ubuntu:~/0x12$ cat 100-main.js
+#!/usr/bin/node
+myVar = 89;
+require('./100-let_me_const')
+console.log(myVar);
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./100-main.js 
+333
+```
+
 ---
 
 ### Environment
