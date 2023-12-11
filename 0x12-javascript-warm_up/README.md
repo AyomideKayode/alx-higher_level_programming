@@ -54,6 +54,23 @@ $ sudo apt-get install -y nodejs
 $ sudo npm install semistandard --global
 ```
 
+## **NOTE**
+
+* Experienced some issues with the `nodejs` installed with the instruction above because I couldn't install `semistandard`.
+* So I had to install `nvm` Node Version Manager.
+	- **Using `curl`**:
+	```sh
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+	```
+	- **Using `wget`**:
+	```sh
+	wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+	```
+* After installation, close and reopen the terminal to check that `nvm` was properly installed. `nvm --version`
+* Now that we have a the `nvm`, we can use it to update or install the latest version of `Node.js`: `nvm install --lts`
+* This command installs the latest LTS (Long Term Support) version of Node.js. After installation, use `nvm use <version>` to switch to the installed Node.js version.
+
+
 ## Description of what each file shows (Tasks):
 
 * main - help folder to hold main.js files provided by ALX and or images to make README better.
