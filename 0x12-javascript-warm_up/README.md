@@ -152,14 +152,26 @@ Write a script that prints the first argument passed to it:
 
 4. [Create a sentence](./4-concat.js) :
 
+Write a script that prints two arguments passed to it, in the following format: “ is ”
 
+- You must use `console.log(...)` to print all output
+- You are not allowed to use `var`
 
+	```sh
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./4-concat.js 
+	undefined is undefined
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./4-concat.js Kay good
+	Kay is good
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ semistandard ./4-concat.js 
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ 
+	```
 
+5. [An Integer ](./5-to_integer.js) :
 | Task                    | File                                                     |
 | ----------------------- | -------------------------------------------------------- |
 |             |
 |                              |
-| 5. An Integer           | [5-to_integer.js](./5-to_integer.js)                     |
+|                     |
 | 6. Loop to languages    | [6-multi_languages_loop.js](./6-multi_languages_loop.js) |
 | 7. I love C             | [7-multi_c.js](./7-multi_c.js)                           |
 | 8. Square               | [8-square.js](./8-square.js)                             |
