@@ -398,6 +398,27 @@ C is fun
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$
 ```
 
+16. [Add me maybe](./102-add_me_maybe.js) :
+
+Write a function that increments and calls a function.
+
+- The function must be visible from outside
+- Prototype: `function (number, theFunction)`
+- You are not allowed to use `var`
+
+```sh
+guillaume@ubuntu:~/0x12$ cat 102-main.js
+#!/usr/bin/node
+const addMeMaybe = require('./102-add_me_maybe').addMeMaybe;
+addMeMaybe(4, function (nb) {
+  console.log('New value: ' + nb);
+});
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./102-main.js 
+New value: 5
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ 
+```
+
+
 ---
 
 ### Environment
