@@ -132,10 +132,33 @@ Write a script that prints a message depending of the number of arguments passed
 
 Reference: [process.argv](https://nodejs.org/api/process.html#process_process_argv)
 
+3. [Value of my argument](./3-value_argument.js) :
+
+Write a script that prints the first argument passed to it:
+
+- If no arguments are passed to the script, print “No argument”
+- You must use `console.log(...)` to print all output
+- You are not allowed to use `var`
+- You are not allowed to use `length`
+
+  ```sh
+  ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./3-value_argument.js 
+  No argument
+  ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./3-value_argument.js kay
+  kay
+  ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ semistandard 3-value_argument.js 
+  ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ 
+  ```
+
+4. [Create a sentence](./4-concat.js) :
+
+
+
+
 | Task                    | File                                                     |
 | ----------------------- | -------------------------------------------------------- |
-| 3. Value of my argument | [3-value_argument.js](./3-value_argument.js)             |
-| 4. Create a sentence    | [4-concat.js](./4-concat.js)                             |
+|             |
+|                              |
 | 5. An Integer           | [5-to_integer.js](./5-to_integer.js)                     |
 | 6. Loop to languages    | [6-multi_languages_loop.js](./6-multi_languages_loop.js) |
 | 7. I love C             | [7-multi_c.js](./7-multi_c.js)                           |
