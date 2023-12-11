@@ -331,7 +331,7 @@ Write a script that searches the second biggest integer in the list of arguments
 
 Update this script to replace the value 12 with 89:
 
-- You are not allowed to use var
+- You are not allowed to use `var`
 	```sh
 	guillaume@ubuntu:~/0x12$ cat 12-object.js
 	#!/usr/bin/node
@@ -346,11 +346,36 @@ Update this script to replace the value 12 with 89:
 	console.log(myObject);
 	```
 
-| Task                    | File                                                     |
-| ----------------------- | -------------------------------------------------------- |
-|                              |
-|                                   |
-|                     |
-|           |
-|                           |
-| 13. Add file            | [13-add.js](./13-add.js)                                 |
+13. [Add file](./13-add.js) :
+
+Write a function that returns the addition of 2 integers.
+
+- The function must be visible from outside
+- The name of the function must be `add`
+- You are not allowed to use `var`
+
+	```sh
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ semistandard 13-add.js 
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ semistandard 13-main.js 
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./13-main.js 
+	8
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$
+	```
+
+---
+
+### Environment
+
+* Language: Javascript, Node v20.10.0
+	* OS: Ubuntu 20.04 LTS
+	* Style guidelines:
+		- [Javascript Semistandard](https://github.com/standard/semistandard) ```sudo npm install semistandard --global```
+		- [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
+
+---
+
+## Author
+
+* **<em>Website</em>** - [Ayomide Kayode](https://github.com/AyomideKayode)
+* **<em>ALX Software Engineering Program</em>** - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+* **<em>Twitter</em>** - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
