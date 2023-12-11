@@ -1,5 +1,7 @@
 # Project: 0x12. JavaScript - Warm up
 
+<img src="./main/Javascript-535.png.jpeg" alt="JavaScript-work" width=80%>
+
 ## Resources
 
 #### Read or watch:
@@ -418,6 +420,39 @@ New value: 5
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ 
 ```
 
+17. [Increment object](./103-object_fct.js) :
+
+Update this script by adding a new function `incr` that increments the integer `value`.
+
+- You are not allowed to use `var`
+
+```sh
+guillaume@ubuntu:~/0x12$ cat 103-object_fct.js
+#!/usr/bin/node
+const myObject = {
+  type: 'object',
+  value: 12
+};
+console.log(myObject);
+/*
+YOUR CODE HERE
+*/
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+```
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./103-object_fct.js 
+{ type: 'object', value: 12 }
+{ type: 'object', value: 13, incr: [Function] }
+{ type: 'object', value: 14, incr: [Function] }
+{ type: 'object', value: 15, incr: [Function] }
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ 
+```
 
 ---
 
