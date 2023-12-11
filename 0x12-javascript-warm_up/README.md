@@ -183,13 +183,36 @@ Write a script that prints `My number: <first argument converted in integer>` if
 	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ 
 	```
 
+6. [Loop to languages](./6-multi_languages_loop.js) :
+
+Write a script that prints 3 lines: (like `1-multi_languages.js`) but by using an array of string and a loop
+
+- The first line: “C is fun”
+- The second line: “Python is cool”
+- The third line: “JavaScript is amazing”
+- You must use `console.log(...)` to print all output
+- You are not allowed to use `var`
+- You are not allowed to use any `if/else` statement
+- You can use only one `console.log`
+- You must use a loop (`while`, `for`, etc.)
+
+	```sh
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./6-multi_languages_loop.js 
+	C is fun
+	Python is cool
+	JavaScript is amazing
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ 
+	```
+
+7. [I love C](./7-multi_c.js) : 
+
 | Task                    | File                                                     |
 | ----------------------- | -------------------------------------------------------- |
 |             |
 |                              |
 |                     |
-| 6. Loop to languages    | [6-multi_languages_loop.js](./6-multi_languages_loop.js) |
-| 7. I love C             | [7-multi_c.js](./7-multi_c.js)                           |
+|  |
+|                            |
 | 8. Square               | [8-square.js](./8-square.js)                             |
 | 9. Add                  | [9-add.js](./9-add.js)                                   |
 | 10. Factorial           | [10-factorial.js](./10-factorial.js)                     |
