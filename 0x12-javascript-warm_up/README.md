@@ -167,6 +167,22 @@ Write a script that prints two arguments passed to it, in the following format: 
 	```
 
 5. [An Integer ](./5-to_integer.js) :
+
+Write a script that prints `My number: <first argument converted in integer>` if the first argument can be converted to an integer:
+
+- If the argument can’t be converted to an integer, print “Not a number”
+- You must use `console.log(...)` to print all output
+- You are not allowed to use `var`
+- You are not allowed to use `try/catch`
+
+	```sh
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./5-to_integer.js 
+	Not a number
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./5-to_integer.js 78
+	My number: 78
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ 
+	```
+
 | Task                    | File                                                     |
 | ----------------------- | -------------------------------------------------------- |
 |             |
