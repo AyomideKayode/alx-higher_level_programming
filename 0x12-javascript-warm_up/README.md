@@ -1,0 +1,84 @@
+# Project: 0x12. JavaScript - Warm up
+
+## Resources
+
+#### Read or watch:
+
+* [Writing JavaScript Code](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+* [Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
+* [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+* [Operators](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+* [Operator Precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+* [Controlling Program Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+* [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+* [Objects and Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+* [Intrinsic Objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+* [Module patterns](https://darrenderidder.github.io/talks/ModulePatterns/#/)
+* [var, let and const](https://www.youtube.com/watch?v=sjyJBL5fkp8)
+* [JavaScript Tutorial](https://www.youtube.com/watch?v=vZBCTc9zHtI)
+* [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
+
+## Learning Objectives
+
+### General
+
+* Why JavaScript programming is amazing
+* How to run a JavaScript script
+* How to create variables and constants
+* What are differences between <code>var</code>, <code>const</code> and <code>let</code>
+* What are all the data types available in JavaScript
+* How to use the <code>if</code>, <code>if ... else</code> statements
+* How to use comments
+* How to affect values to variables
+* How to use <code>while</code> and <code>for</code> loops
+* How to use <code>break</code> and <code>continue</code> statements
+* What is a function and how do you use functions
+* What does a function that does not use any <code>return</code> statement return
+* Scope of variables
+* What are the arithmetic operators and how to use them
+* How to manipulate dictionary
+* How to import a file
+
+## More Info
+
+### Install Node 14
+```sh
+$ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+```
+
+### Install semi-standard
+
+[Documentation](https://github.com/standard/semistandard)
+```sh
+$ sudo npm install semistandard --global
+```
+
+## Description of what each file shows (Tasks):
+
+* main - help folder to hold main.js files provided by ALX and or images to make README better.
+
+0. [First constant, first print](./0-javascript_is_amazing.js) :
+
+Write a script that prints “JavaScript is amazing”:
+
+- You must create a constant variable called `myVar` with the value “JavaScript is amazing”
+- You must use `console.log(...)` to print all output
+- You are not allowed to use `var`
+
+| Task | File |
+| ---- | ---- |
+| |
+| 1. 3 languages | [1-multi_languages.js](./1-multi_languages.js) |
+| 2. Arguments | [2-arguments.js](./2-arguments.js) |
+| 3. Value of my argument | [3-value_argument.js](./3-value_argument.js) |
+| 4. Create a sentence | [4-concat.js](./4-concat.js) |
+| 5. An Integer | [5-to_integer.js](./5-to_integer.js) |
+| 6. Loop to languages | [6-multi_languages_loop.js](./6-multi_languages_loop.js) |
+| 7. I love C | [7-multi_c.js](./7-multi_c.js) |
+| 8. Square | [8-square.js](./8-square.js) |
+| 9. Add | [9-add.js](./9-add.js) |
+| 10. Factorial | [10-factorial.js](./10-factorial.js) |
+| 11. Second biggest! | [11-second_biggest.js](./11-second_biggest.js) |
+| 12. Object | [12-object.js](./12-object.js) |
+| 13. Add file | [13-add.js](./13-add.js) |
