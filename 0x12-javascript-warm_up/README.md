@@ -327,11 +327,30 @@ Write a script that searches the second biggest integer in the list of arguments
 	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ 
 	```
 
+12. [Object](./12-object.js) :
+
+Update this script to replace the value 12 with 89:
+
+- You are not allowed to use var
+	```sh
+	guillaume@ubuntu:~/0x12$ cat 12-object.js
+	#!/usr/bin/node
+	const myObject = {
+	type: 'object',
+	value: 12
+	};
+	console.log(myObject);
+	/*
+	YOUR CODE HERE
+	*/
+	console.log(myObject);
+	```
+
 | Task                    | File                                                     |
 | ----------------------- | -------------------------------------------------------- |
 |                              |
 |                                   |
 |                     |
 |           |
-| 12. Object              | [12-object.js](./12-object.js)                           |
+|                           |
 | 13. Add file            | [13-add.js](./13-add.js)                                 |
