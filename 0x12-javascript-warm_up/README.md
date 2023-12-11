@@ -230,15 +230,39 @@ Write a script that prints `x` times “C is fun”
 	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$
 	```
 
+8. [Square](./8-square.js) :
+
+Write a script that prints a square
+
+- The first argument is the size of the square
+- If the first argument can’t be converted to an integer, print “Missing size”
+- You must use the character `X` to print the square
+- You must use `console.log(...)` to print all output
+- You are not allowed to use `var`
+- You must use a loop (`while`, `for`, etc.)
+
+	```sh
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./8-square.js 
+	Missing size
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./8-square.js  2
+	XX
+	XX
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./8-square.js 9
+	XXXXXXXXX
+	XXXXXXXXX
+	XXXXXXXXX
+	XXXXXXXXX
+	XXXXXXXXX
+	XXXXXXXXX
+	XXXXXXXXX
+	XXXXXXXXX
+	XXXXXXXXX
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ 
+	```
 
 | Task                    | File                                                     |
 | ----------------------- | -------------------------------------------------------- |
-|             |
 |                              |
-|                     |
-|  |
-|                            |
-| 8. Square               | [8-square.js](./8-square.js)                             |
 | 9. Add                  | [9-add.js](./9-add.js)                                   |
 | 10. Factorial           | [10-factorial.js](./10-factorial.js)                     |
 | 11. Second biggest!     | [11-second_biggest.js](./11-second_biggest.js)           |
