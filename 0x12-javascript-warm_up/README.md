@@ -206,6 +206,31 @@ Write a script that prints 3 lines: (like `1-multi_languages.js`) but by using a
 
 7. [I love C](./7-multi_c.js) : 
 
+Write a script that prints `x` times “C is fun”
+
+- Where `x` is the first argument of the script
+- If the first argument can’t be converted to an integer, print “Missing number of occurrences”
+- You must use `console.log(...)` to print all output
+- You are not allowed to use `var`
+- You can use only two `console.log`
+- You must use a loop (`while`, `for`, etc.)
+
+	```sh
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./7-multi_c.js 
+	Missing number of occurences
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$ ./7-multi_c.js 8
+	C is fun
+	C is fun
+	C is fun
+	C is fun
+	C is fun
+	C is fun
+	C is fun
+	C is fun
+	ayomide@Kazzywiz:~/alx-higher_level_programming/0x12-javascript-warm_up$
+	```
+
+
 | Task                    | File                                                     |
 | ----------------------- | -------------------------------------------------------- |
 |             |
