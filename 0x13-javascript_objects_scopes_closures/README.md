@@ -183,12 +183,30 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_c
 
 6. [Square #1](./6-square.js) :
 
+Write a class `Square` that defines a square and inherits from Sq`uare of `5-square.js`:
 
+- You must use the `class` notation for defining your class and `extends`
+- Create an instance method called `charPrint(c)` that prints the rectangle using the character `c`
+	- If `c` is `undefined`, use the character `X`
 
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./6-main.js 
+XXXX
+XXXX
+XXXX
+XXXX
+CCCC
+CCCC
+CCCC
+CCCC
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+```
+
+7. [Occurrences](./7-occurrences.js) :
 | Task | File |
 | ---- | ---- |
 |  |
-| 7. Occurrences | [7-occurrences.js](./7-occurrences.js) |
+|  |
 | 8. Esrever | [8-esrever.js](./8-esrever.js) |
 | 9. Log me | [9-logme.js](./9-logme.js) |
 | 10. Number conversion | [10-converter.js](./10-converter.js) |
