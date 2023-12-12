@@ -158,14 +158,36 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_c
 
 5. [Square #0](./5-square.js) :
 
+Write a class `Square` that defines a square and inherits from `Rectangle` of `4-rectangle.js`:
+
+- You must use the `class` notation for defining your class and `extends`
+- The constructor must take 1 argument: `size`
+- The constructor of `Rectangle` must be called (by using `super()`)
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./5-main.js 
+XXXX
+XXXX
+XXXX
+XXXX
+XXXXXXXX
+XXXXXXXX
+XXXXXXXX
+XXXXXXXX
+XXXXXXXX
+XXXXXXXX
+XXXXXXXX
+XXXXXXXX
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+```
+
+6. [Square #1](./6-square.js) :
+
+
 
 | Task | File |
 | ---- | ---- |
 |  |
-|  |
-|  |
-|  |
-| 6. Square #1 | [6-square.js](./6-square.js) |
 | 7. Occurrences | [7-occurrences.js](./7-occurrences.js) |
 | 8. Esrever | [8-esrever.js](./8-esrever.js) |
 | 9. Log me | [9-logme.js](./9-logme.js) |
