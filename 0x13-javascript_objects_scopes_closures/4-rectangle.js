@@ -1,14 +1,14 @@
 #!/usr/bin/node
 
 module.exports = class Rectangle {
-  constructor(w, h) {
+  constructor (w, h) {
     if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
     }
   }
 
-  print() {
+  print () {
     let rectChar; // declare var to act as container for printing charcaters
     for (let i = 0; i < this.height; i++) {
       // let the variable be an empty string
@@ -21,14 +21,14 @@ module.exports = class Rectangle {
     }
   }
 
-  rotate() {
+  rotate () {
     // had to refactor and use a temp to first hold the width before swapping
-    let temp = this.width;
+    const tempSwap = this.width;
     this.width = this.height;
-    this.height = temp;
+    this.height = tempSwap;
   }
 
-  double() {
+  double () {
     this.width *= 2;
     this.height *= 2;
   }
