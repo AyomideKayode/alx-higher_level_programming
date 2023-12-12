@@ -68,7 +68,7 @@ undefined
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
 ```
 
-2. [Rectangle #2](./2-rectangle.js)
+2. [Rectangle #2](./2-rectangle.js) :
 
 | Task | File |
 | ---- | ---- |
