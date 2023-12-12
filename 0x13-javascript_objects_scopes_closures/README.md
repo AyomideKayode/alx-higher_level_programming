@@ -4,33 +4,33 @@
 
 ### Read or watch:
 
-* [JavaScript object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
-* [Object-oriented JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
-* [Class - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-* [super - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
-* [extends - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
-* [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
-* [Inheritance in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
-* [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
-* [this/self](https://alistapart.com/article/getoutbindingsituations/)
-* [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
+- [JavaScript object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+- [Object-oriented JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
+- [Class - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- [super - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
+- [extends - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
+- [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
+- [Inheritance in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
+- [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+- [this/self](https://alistapart.com/article/getoutbindingsituations/)
+- [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
 
 ## Learning Objectives
 
 ### General
 
-* Why JavaScript programming is amazing
-* How to create an object in JavaScript
-* What <code>this</code> means
-* What <code>undefined</code> means 
-* Why the variable type and scope is important
-* What is a closure
-* What is a prototype
-* How to inherit an object from another
+- Why JavaScript programming is amazing
+- How to create an object in JavaScript
+- What <code>this</code> means
+- What <code>undefined</code> means
+- Why the variable type and scope is important
+- What is a closure
+- What is a prototype
+- How to inherit an object from another
 
 ## Description of each files shows (Tasks):
 
-* main - help folder to hold main.js files provided by ALX and or images to make README better.
+- main - help folder to hold main.js files provided by ALX and or images to make README better.
 
 0. [Rectangle #0](./0-rectangle.js) :
 
@@ -39,7 +39,7 @@ Write an empty class `Rectangle` that defines a rectangle:
 - You must use the `class` notation for defining your class
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./0-main.js 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./0-main.js
 Rectangle {}
 [Function: Rectangle]
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$
@@ -55,7 +55,7 @@ Write a class `Rectangle` that defines a rectangle:
 - Initialize the instance attribute `height` with the value of `h`
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./1-main.js 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./1-main.js
 Rectangle { width: 2, height: 3 }
 2
 3
@@ -65,7 +65,7 @@ Rectangle { width: 2, height: -3 }
 Rectangle { width: 2, height: undefined }
 2
 undefined
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$
 ```
 
 2. [Rectangle #2](./2-rectangle.js) :
@@ -79,7 +79,7 @@ Write a class Rectangle that defines a rectangle:
 - If `w` or `h` is equal to 0 or not a positive integer, create an empty object
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./2-main.js 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./2-main.js
 Rectangle { width: 2, height: 3 }
 2
 3
@@ -92,7 +92,7 @@ undefined
 Rectangle {}
 undefined
 undefined
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$
 ```
 
 3. [Rectangle #3](./3-rectangle.js) :
@@ -107,7 +107,7 @@ Write a class `Rectangle` that defines a rectangle:
 - Create an instance method called `print()` that prints the rectangle using the character `X`
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./3-main.js 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./3-main.js
 XX
 XX
 XX
@@ -133,8 +133,8 @@ Write a class `Rectangle` that defines a rectangle:
 - Create an instance method called `double()` that multiples the `width` and the `height` of the rectangle by 2
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ semistandard 4-rectangle.js 
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./4-main.js 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ semistandard 4-rectangle.js
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./4-main.js
 Normal:
 XX
 XX
@@ -153,7 +153,7 @@ XXXXXX
 XXXXXX
 XXXXXX
 XXXXXX
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$
 ```
 
 5. [Square #0](./5-square.js) :
@@ -165,7 +165,7 @@ Write a class `Square` that defines a square and inherits from `Rectangle` of `4
 - The constructor of `Rectangle` must be called (by using `super()`)
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./5-main.js 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./5-main.js
 XXXX
 XXXX
 XXXX
@@ -178,7 +178,7 @@ XXXXXXXX
 XXXXXXXX
 XXXXXXXX
 XXXXXXXX
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$
 ```
 
 6. [Square #1](./6-square.js) :
@@ -187,10 +187,10 @@ Write a class `Square` that defines a square and inherits from Sq`uare of `5-squ
 
 - You must use the `class` notation for defining your class and `extends`
 - Create an instance method called `charPrint(c)` that prints the rectangle using the character `c`
-	- If `c` is `undefined`, use the character `X`
+  - If `c` is `undefined`, use the character `X`
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./6-main.js 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./6-main.js
 XXXX
 XXXX
 XXXX
@@ -199,7 +199,7 @@ CCCC
 CCCC
 CCCC
 CCCC
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$
 ```
 
 7. [Occurrences](./7-occurrences.js) :
@@ -209,11 +209,11 @@ Write a function that returns the number of occurrences in a list:
 - Prototype: `exports.nbOccurences = function (list, searchElement)`
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./7-main.js 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./7-main.js
 1
 4
 2
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$
 ```
 
 8. [Esrever](./8-esrever.js) :
@@ -224,10 +224,10 @@ Write a function that returns the reversed version of a list:
 - You are not allow to use the built-in method `reverse`
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./8-main.js 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./8-main.js
 [ 5, 4, 3, 2, 1 ]
 [ 'String', { id: 12 }, 89, 'School' ]
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./8-main.js 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./8-main.js
 [ 5, 4, 3, 2, 1 ]
 [ 'String', { id: 12 }, 89, 'School' ]
 5
@@ -241,14 +241,46 @@ Write a function that prints the number of arguments already printed and the new
 - Output format: `<number arguments already printed>: <current argument value>`
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./9-main.js 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./9-main.js
 0: Hello
 1: Best
 2: School
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$
 ```
 
-| Task | File |
-| ---- | ---- |
-|  |
-| 10. Number conversion | [10-converter.js](./10-converter.js) |
+10. [Number conversion](./10-converter.js) :
+
+Write a function that converts a number from base 10 to another base passed as argument:
+
+- Prototype: `exports.converter = function (base)`
+- You are not allowed to import any file
+- You are not allowed to declare any new variable (var, let, etc..)
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./10-main.js
+2
+12
+89
+2
+c
+59
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$
+```
+
+---
+
+### Environment
+
+- Language: Javascript, Node v20.10.0
+  - OS: Ubuntu 20.04 LTS
+  - Style guidelines:
+    - [Javascript Semistandard](https://github.com/standard/semistandard) `sudo npm install semistandard --global`
+    - [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
+
+---
+
+## Author
+
+- **<em>Website</em>** - [Ayomide Kayode](https://github.com/AyomideKayode)
+- **<em>ALX Software Engineering Program</em>** - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- **<em>Twitter</em>** - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
