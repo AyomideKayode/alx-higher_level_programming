@@ -233,7 +233,22 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_c
 5
 ```
 
+9. [Log me](./9-logme.js) :
+
+Write a function that prints the number of arguments already printed and the new argument value. (see example below)
+
+- Prototype: `exports.logMe = function (item)`
+- Output format: `<number arguments already printed>: <current argument value>`
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./9-main.js 
+0: Hello
+1: Best
+2: School
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+```
+
 | Task | File |
 | ---- | ---- |
-| 9. Log me | [9-logme.js](./9-logme.js) |
+|  |
 | 10. Number conversion | [10-converter.js](./10-converter.js) |
