@@ -216,10 +216,24 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_c
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
 ```
 
+8. [Esrever](./8-esrever.js) :
+
+Write a function that returns the reversed version of a list:
+
+- Prototype: `exports.esrever = function (list)`
+- You are not allow to use the built-in method `reverse`
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./8-main.js 
+[ 5, 4, 3, 2, 1 ]
+[ 'String', { id: 12 }, 89, 'School' ]
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./8-main.js 
+[ 5, 4, 3, 2, 1 ]
+[ 'String', { id: 12 }, 89, 'School' ]
+5
+```
+
 | Task | File |
 | ---- | ---- |
-|  |
-|  |
-| 8. Esrever | [8-esrever.js](./8-esrever.js) |
 | 9. Log me | [9-logme.js](./9-logme.js) |
 | 10. Number conversion | [10-converter.js](./10-converter.js) |
