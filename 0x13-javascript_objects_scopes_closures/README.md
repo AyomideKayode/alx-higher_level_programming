@@ -45,10 +45,34 @@ Rectangle {}
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$
 ```
 
+1. [Rectangle #1](./1-rectangle.js) :
+
+Write a class `Rectangle` that defines a rectangle:
+
+- You must use the `class` notation for defining your class
+- The constructor must take 2 arguments `w` and `h`
+- Initialize the instance attribute `width` with the value of `w`
+- Initialize the instance attribute `height` with the value of `h`
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./1-main.js 
+Rectangle { width: 2, height: 3 }
+2
+3
+Rectangle { width: 2, height: -3 }
+2
+-3
+Rectangle { width: 2, height: undefined }
+2
+undefined
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+```
+
+2. [Rectangle #2](./2-rectangle.js)
+
 | Task | File |
 | ---- | ---- |
-| 1. Rectangle #1 | [1-rectangle.js](./1-rectangle.js) |
-| 2. Rectangle #2 | [2-rectangle.js](./2-rectangle.js) |
+|  |
 | 3. Rectangle #3 | [3-rectangle.js](./3-rectangle.js) |
 | 4. Rectangle #4 | [4-rectangle.js](./4-rectangle.js) |
 | 5. Square #0 | [5-square.js](./5-square.js) |
