@@ -293,6 +293,31 @@ Write a script that imports a dictionary of occurrences by user id and computes 
 - A value is the list of user ids
 - Print the new dictionary at the end
 
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./101-sorted.js 
+{ '1': [ '89', '91', '93' ], '2': [ '90', '94' ], '3': [ '92' ] }
+```
+
+13. [Concat files](./102-concat.js) :
+
+Write a script that concats 2 files.
+
+- The first argument is the file path of the first source file
+- The second argument is the file path of the second source file
+- The third argument is the file path of the destination
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ cat fileA
+C is fun!
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ cat fileB
+Python is cool!!!
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./102-concat.js fileA fileB new_file
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ cat new_file
+C is fun!
+Python is cool!!!
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+```
+
 ---
 
 ### Environment
