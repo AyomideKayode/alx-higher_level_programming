@@ -97,14 +97,14 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_c
 
 3. [Rectangle #3](./3-rectangle.js) :
 
-Write a class Rectangle that defines a rectangle:
+Write a class `Rectangle` that defines a rectangle:
 
-- You must use the class notation for defining your class
-- The constructor must take 2 arguments: w and h
-- Initialize the instance attribute width with the value of w
-- Initialize the instance attribute height with the value of h
-- If w or h is equal to 0 or not a positive integer, create an empty object
-- Create an instance method called print() that prints the rectangle using the character X
+- You must use the `class` notation for defining your class
+- The constructor must take 2 arguments: `w` and `h`
+- Initialize the instance attribute `width` with the value of `w`
+- Initialize the instance attribute `height` with the value of `h`
+- If `w` or `h` is equal to `0` or not a positive integer, create an empty object
+- Create an instance method called `print()` that prints the rectangle using the character `X`
 
 ```sh
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./3-main.js 
@@ -119,13 +119,52 @@ XXXXXXXXXX
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$
 ```
 
+4. [Rectangle #4](./4-rectangle.js) :
+
+Write a class `Rectangle` that defines a rectangle:
+
+- You must use the `class` notation for defining your class
+- The constructor must take 2 arguments: `w` and `h`
+- Initialize the instance attribute `width` with the value of `w`
+- Initialize the instance attribute `height` with the value of `h`
+- If `w` or `h` is equal to 0 or not a positive integer, create an empty object
+- Create an instance method called `print()` that prints the rectangle using the character `X`
+- Create an instance method called `rotate()` that exchanges the `width` and the `height` of the rectangle
+- Create an instance method called `double()` that multiples the `width` and the `height` of the rectangle by 2
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ semistandard 4-rectangle.js 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./4-main.js 
+Normal:
+XX
+XX
+XX
+Double:
+XXXX
+XXXX
+XXXX
+XXXX
+XXXX
+XXXX
+Rotate:
+XXXXXX
+XXXXXX
+XXXXXX
+XXXXXX
+XXXXXX
+XXXXXX
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+```
+
+5. [Square #0](./5-square.js) :
+
 
 | Task | File |
 | ---- | ---- |
 |  |
 |  |
-| 4. Rectangle #4 | [4-rectangle.js](./4-rectangle.js) |
-| 5. Square #0 | [5-square.js](./5-square.js) |
+|  |
+|  |
 | 6. Square #1 | [6-square.js](./6-square.js) |
 | 7. Occurrences | [7-occurrences.js](./7-occurrences.js) |
 | 8. Esrever | [8-esrever.js](./8-esrever.js) |
