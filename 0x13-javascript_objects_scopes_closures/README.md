@@ -203,6 +203,19 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_c
 ```
 
 7. [Occurrences](./7-occurrences.js) :
+
+Write a function that returns the number of occurrences in a list:
+
+- Prototype: `exports.nbOccurences = function (list, searchElement)`
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ ./7-main.js 
+1
+4
+2
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
+```
+
 | Task | File |
 | ---- | ---- |
 |  |
