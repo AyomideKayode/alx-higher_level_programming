@@ -283,6 +283,16 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_c
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x13-javascript_objects_scopes_closures$ 
 ```
 
+12. [Sorted Occurences](./101-sorted.js) :
+
+Write a script that imports a dictionary of occurrences by user id and computes a dictionary of user ids by occurrence.
+
+- Your script must import `dict` from the file `101-data.js`
+- In the new dictionary:
+- A key is a number of occurrences
+- A value is the list of user ids
+- Print the new dictionary at the end
+
 ---
 
 ### Environment
