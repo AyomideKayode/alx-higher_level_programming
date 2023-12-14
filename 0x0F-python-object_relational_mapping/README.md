@@ -114,10 +114,32 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_ma
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
 ```
 
+2. [Filter states by user input](./2-my_filter_states.py) :
+
+Write a script that takes in an argument and displays all values in the `states` table of `hbtn_0e_0_usa` where `name` matches the argument.
+
+- Your script should take 4 arguments: `mysql username`, `mysql password`, `database name` and `state name searched` (no argument validation needed)
+- You must use the module `MySQLdb` (`import MySQLdb`)
+- Your script should connect to a MySQL server running on `localhost` at port `3306`
+- You must use `format` to create the SQL query with the user input
+- Results must be sorted in ascending order by `states.id`
+- Results must be displayed as they are in the example below
+- Your code should not be executed when imported
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./2-my_filter_states.py root ayomide_Kayode7 hbtn_0e_0_usa 'Arizona'
+(2, 'Arizona')
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./2-my_filter_states.py root ayomide_Kayode7 hbtn_0e_0_usa 'Texas'
+(3, 'Texas')
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+```
+
+
+
 | Task                           | File                                                                                                   |
 | ------------------------------ | ------------------------------------------------------------------------------------------------------ |
 |                                |
-| 2. Filter states by user input | [2-my_filter_states.py](./2-my_filter_states.py)                                                       |
+|                                                    |
 | 3. SQL Injection...            | [3-my_safe_filter_states.py](./3-my_safe_filter_states.py)                                             |
 | 4. Cities by states            | [4-cities_by_state.py](./4-cities_by_state.py)                                                         |
 | 5. All cities by state         | [5-filter_cities.py](./5-filter_cities.py)                                                             |
