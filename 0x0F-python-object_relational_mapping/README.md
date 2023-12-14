@@ -166,9 +166,43 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_ma
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$
 ```
 
+4. [Cities by states](./4-cities_by_state.py) :
+
+Write a script that lists all `cities` from the database `hbtn_0e_4_usa`
+
+- Your script should take 3 arguments: `mysql username`, `mysql password` and `database name`
+- You must use the module `MySQLdb` (`import MySQLdb`)
+- Your script should connect to a MySQL server running on `localhost` at port `3306`
+- Results must be sorted in ascending order by `cities.id`
+- You can use only `execute()` once
+- Results must be displayed as they are in the example below
+- Your code should not be executed when imported
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./4-cities_by_state.py root ayomide_Kayode7 hbtn_0e_4_usa
+(1, 'San Francisco', 'California')
+(2, 'San Jose', 'California')
+(3, 'Los Angeles', 'California')
+(4, 'Fremont', 'California')
+(5, 'Livermore', 'California')
+(6, 'Page', 'Arizona')
+(7, 'Phoenix', 'Arizona')
+(8, 'Dallas', 'Texas')
+(9, 'Houston', 'Texas')
+(10, 'Austin', 'Texas')
+(11, 'New York', 'New York')
+(12, 'Las Vegas', 'Nevada')
+(13, 'Reno', 'Nevada')
+(14, 'Henderson', 'Nevada')
+(15, 'Carson City', 'Nevada')
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+```
+
+
+
 | Task                           | File                                                                                                   |
 | ------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| 4. Cities by states            | [4-cities_by_state.py](./4-cities_by_state.py)                                                         |
+|                                                        |
 | 5. All cities by state         | [5-filter_cities.py](./5-filter_cities.py)                                                             |
 | 6. First state model           | [model_state.py](./model_state.py)                                                                     |
 | 7. All states via SQLAlchemy   | [7-model_state_fetch_all.py](./7-model_state_fetch_all.py)                                             |
