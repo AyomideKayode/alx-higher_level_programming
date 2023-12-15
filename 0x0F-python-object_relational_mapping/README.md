@@ -326,15 +326,34 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_ma
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
 ```
 
+10. [Get a state](./10-model_state_my_get.py) :
 
+Write a script that prints the `State` object with the name passed as argument from the database `hbtn_0e_6_usa`
+
+- Your script should take 4 arguments: `mysql username`, `mysql password`, `database name` and `state name` to search (SQL injection free)
+- You must use the module `SQLAlchemy`
+- You must import `State` and `Base` from `model_state` - `from model_state import Base, State`
+- Your script should connect to a MySQL server running on `localhost` at port `3306`
+- You can assume you have one record with the state name to search
+- Results must display the `states.id`
+- If no state has the name you searched for, display `Not found`
+- Your code should not be executed when imported
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Nevada
+5
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+```
+
+11. [Add a new state](./11-model_state_insert.py) :
 
 
 | Task                           | File                                                                                                   |
 | ------------------------------ | ------------------------------------------------------------------------------------------------------ |
 |                                          |
 |                            |
-| 10. Get a state                | [10-model_state_my_get.py](./10-model_state_my_get.py)                                                 |
-| 11. Add a new state            | [11-model_state_insert.py](./11-model_state_insert.py)                                                 |
+|                                                 |
+|                                                  |
 | 12. Update a state             | [12-model_state_update_id_2.py](./12-model_state_update_id_2.py)                                       |
 | 13. Delete states              | [13-model_state_delete_a.py](./13-model_state_delete_a.py)                                             |
 | 14. Cities in state            | [model_city.py](./model_city.py), [14-model_city_fetch_by_state.py](./14-model_city_fetch_by_state.py) |
