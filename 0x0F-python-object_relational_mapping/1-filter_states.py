@@ -34,7 +34,8 @@ if __name__ == "__main__":
 
     # display/print them out
     for state in states:
-        print(state)
+        if state[1][0] == 'N':
+            print(state)
 
     # closing the cursor and database connection
     cursor.close()
