@@ -198,12 +198,30 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_ma
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
 ```
 
+5. [All cities by state](./5-filter_cities.py) :
+
+Write a script that takes in the name of a state as an argument and lists all `cities` of that state, using the database `hbtn_0e_4_usa`
+
+- Your script should take 4 arguments: `mysql username`, `mysql password`, `database name` and `state name` (SQL injection free!)
+- You must use the module `MySQLdb` (`import MySQLdb`)
+- Your script should connect to a MySQL server running on `localhost` at port `3306`
+- Results must be sorted in ascending order by `cities.id`
+- You can use only `execute()` once
+- The results must be displayed as they are in the example below
+- Your code should not be executed when imported
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./5-filter_cities.py root root hbtn_0e_4_usa Texas
+Dallas, Houston, Austin
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+```
+
 
 
 | Task                           | File                                                                                                   |
 | ------------------------------ | ------------------------------------------------------------------------------------------------------ |
 |                                                        |
-| 5. All cities by state         | [5-filter_cities.py](./5-filter_cities.py)                                                             |
+|                                                              |
 | 6. First state model           | [model_state.py](./model_state.py)                                                                     |
 | 7. All states via SQLAlchemy   | [7-model_state_fetch_all.py](./7-model_state_fetch_all.py)                                             |
 | 8. First state                 | [8-model_state_fetch_first.py](./8-model_state_fetch_first.py)                                         |
