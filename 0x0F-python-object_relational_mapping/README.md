@@ -86,14 +86,14 @@ Write a script that lists all `states` from the database `hbtn_0e_0_usa`:
 
 ```sh
 guillaume@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
-Enter password: 
+Enter password:
 guillaume@ubuntu:~/0x0F$ ./0-select_states.py root root hbtn_0e_0_usa
 (1, 'California')
 (2, 'Arizona')
 (3, 'Texas')
 (4, 'New York')
 (5, 'Nevada')
-guillaume@ubuntu:~/0x0F$ 
+guillaume@ubuntu:~/0x0F$
 ```
 
 1. [Filter states](./1-filter_states.py) :
@@ -111,7 +111,7 @@ Write a script that lists all `states` with a `name` starting with `N` (upper N)
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./1-filter_states.py root root hbtn_0e_0_usa
 (4, 'New York')
 (5, 'Nevada')
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$
 ```
 
 2. [Filter states by user input](./2-my_filter_states.py) :
@@ -131,7 +131,7 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_ma
 (2, 'Arizona')
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Texas'
 (3, 'Texas')
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$
 ```
 
 3. [SQL Injection...](./3-my_safe_filter_states.py) :
@@ -195,7 +195,7 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_ma
 (13, 'Reno', 'Nevada')
 (14, 'Henderson', 'Nevada')
 (15, 'Carson City', 'Nevada')
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$
 ```
 
 5. [All cities by state](./5-filter_cities.py) :
@@ -213,12 +213,12 @@ Write a script that takes in the name of a state as an argument and lists all `c
 ```sh
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./5-filter_cities.py root root hbtn_0e_4_usa Texas
 Dallas, Houston, Austin
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$
 ```
 
 6. [First state model](./model_state.py) :
 
-<img src="./sql_main/ignore_sql.jpg" alt="ignore_sql" width=85%>
+<img src="./sql_main/ignore_sql.jpg" alt="ignore_sql" width=25%>
 
 Write a python file that contains the class definition of a `State` and an instance `Base = declarative_base()`:
 
@@ -239,11 +239,11 @@ USE hbtn_0e_6_usa;
 SHOW CREATE TABLE states;
 
 guillaume@ubuntu:~/0x0F$ cat 6-model_state.sql | mysql -uroot -p
-Enter password: 
+Enter password:
 ERROR 1146 (42S02) at line 4: Table 'hbtn_0e_6_usa.states' doesn't exist
 guillaume@ubuntu:~/0x0F$ cat 6-model_state.py
 #!/usr/bin/python3
-"""Start link class to table in database 
+"""Start link class to table in database
 """
 import sys
 from model_state import Base, State
@@ -256,10 +256,10 @@ if __name__ == "__main__":
 
 guillaume@ubuntu:~/0x0F$ ./6-model_state.py root root hbtn_0e_6_usa
 guillaume@ubuntu:~/0x0F$ cat 6-model_state.sql | mysql -uroot -p
-Enter password: 
+Enter password:
 Table   Create Table
 states  CREATE TABLE `states` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `name` varchar(128) NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=latin1
-guillaume@ubuntu:~/0x0F$ 
+guillaume@ubuntu:~/0x0F$
 ```
 
 7. [All states via SQLAlchemy](./7-model_state_fetch_all.py) :
@@ -301,7 +301,7 @@ Write a script that prints the first `State` object from the database `hbtn_0e_6
 ```sh
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
 1: California
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$
 ```
 
 9. [Contains `a`](./9-model_state_filter_a.py) :
@@ -317,13 +317,13 @@ Write a script that lists all `State` objects that contain the letter a from the
 - Your code should not be executed when imported
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ pyc 9-model_state_filter_a.py 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ pyc 9-model_state_filter_a.py
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./9-model_state_filter_a.py root root hbtn_0e_6_usa
 1: California
 2: Arizona
 3: Texas
 5: Nevada
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$
 ```
 
 10. [Get a state](./10-model_state_my_get.py) :
@@ -342,7 +342,7 @@ Write a script that prints the `State` object with the name passed as argument f
 ```sh
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Nevada
 5
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$
 ```
 
 11. [Add a new state](./11-model_state_insert.py) :
@@ -366,7 +366,7 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_ma
 4: New York
 5: Nevada
 6: Louisiana
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$
 ```
 
 12. [Update a state](./12-model_state_update_id_2.py) :
@@ -389,7 +389,7 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_ma
 4: New York
 5: Nevada
 6: Louisiana
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$
 ```
 
 13. [Delete states](./13-model_state_delete_a.py) :
@@ -407,17 +407,67 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_ma
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
 2: New Mexico
 4: New York
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$
 ```
 
+14. [Model City](./model_city.py), [Cities in state](./14-model_city_fetch_by_state.py) |
 
+Write a Python file similar to `model_state.py` named `model_city.py` that contains the class definition of a `City`.
 
-| Task                           | File                                                                                                   |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------ |
-|                                          |
-|                            |
-|                                                 |
-|                                                  |
-|                                        |
-|                                              |
-| 14. Cities in state            | [model_city.py](./model_city.py), [14-model_city_fetch_by_state.py](./14-model_city_fetch_by_state.py) |
+- City class:
+  - inherits from `Base` (imported from `model_state`)
+  - links to the MySQL table `cities`
+  - class attribute `id` that represents a column of an auto-generated, unique integer, can’t be null and is a primary key
+  - class attribute `name` that represents a column of a string of 128 characters and can’t be null
+  - class attribute `state_id` that represents a column of an integer, can’t be null and is a foreign key to `states.id`
+- You must use the module `SQLAlchemy`
+
+Next, write a script `14-model_city_fetch_by_state.py` that prints all `City` objects from the database `hbtn_0e_14_usa`:
+
+- Your script should take 3 arguments: `mysql username`, `mysql password` and `database name`
+- You must use the module `SQLAlchemy`
+- You must import `State` and `Base` from `model_state` - `from model_state import Base, State`
+- Your script should connect to a MySQL server running on `localhost` at port `3306`
+- Results must be sorted in ascending order by `cities.id`
+- Results must be display as they are in the example below (`<state name>: (<city id>) <city name>`)
+- Your code should not be executed when imported
+
+```sh
+guillaume@ubuntu:~/0x0F$ cat 14-model_city_fetch_by_state.sql | mysql -uroot -p
+Enter password:
+guillaume@ubuntu:~/0x0F$ ./14-model_city_fetch_by_state.py root root hbtn_0e_14_usa
+California: (1) San Francisco
+California: (2) San Jose
+California: (3) Los Angeles
+California: (4) Fremont
+California: (5) Livermore
+Arizona: (6) Page
+Arizona: (7) Phoenix
+Texas: (8) Dallas
+Texas: (9) Houston
+Texas: (10) Austin
+New York: (11) New York
+Nevada: (12) Las Vegas
+Nevada: (13) Reno
+Nevada: (14) Henderson
+Nevada: (15) Carson City
+guillaume@ubuntu:~/0x0F$
+```
+
+---
+
+### Environment
+
+- Language: Python 3.4.3, MySQL Scripts
+  - OS: Ubuntu 20.04 LTS
+  - Compiler: Python3, MySQL Ver 8.0.35
+  - Style guidelines:
+    - [PEP 8 (version 1.7)](https://www.python.org/dev/peps/pep-0008/)
+
+---
+
+## Author
+
+- **<em>Website</em>** - [Ayomide Kayode](https://github.com/AyomideKayode)
+- **<em>ALX Software Engineering Program</em>** - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- **<em>Twitter</em>** - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
