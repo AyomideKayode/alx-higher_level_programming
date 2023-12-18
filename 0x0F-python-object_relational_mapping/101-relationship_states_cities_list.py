@@ -33,7 +33,7 @@ if __name__ == "__main__":
     for state in states_cities:
         print("{}: {}".format(state.id, state.name))
         for city in state.cities:
-            print("\t{}: {}".format(city.id, city.name))
+            print("    {}: {}".format(city.id, city.name))
 
     # Closing the session
     session.close()
