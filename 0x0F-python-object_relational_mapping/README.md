@@ -486,6 +486,49 @@ id  name    state_id
 guillaume@ubuntu:~/0x0F$ 
 ```
 
+16. [List relationship](./101-relationship_states_cities_list.py) :
+
+Write a script that lists all `State` objects, and corresponding `City` objects, contained in the database `hbtn_0e_101_usa`
+
+- Your script should take 3 arguments: `mysql username`, `mysql password` and `database name`
+- You must use the module `SQLAlchemy`
+- The connection to your MySQL server must be to `localhost` on port `3306`
+- You must only use one query to the database
+- You must use the `cities` relationship for all `State` objects
+- Results must be sorted in ascending order by `states.id` and `cities.id`
+- Results must be displayed as they are in the example below
+- Your code should not be executed when imported
+
+```sh
+<state id>: <state name>
+<tabulation><city id>: <city name>
+```
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ ./101-relationship_states_cities_list.py root root hbtn_0e_101_usa
+1: California
+        1: San Francisco
+        2: San Jose
+        3: Los Angeles
+        4: Fremont
+        5: Livermore
+2: Arizona
+        6: Page
+        7: Phoenix
+3: Texas
+        8: Dallas
+        9: Houston
+        10: Austin
+4: New York
+        11: New York
+5: Nevada
+        12: Las Vegas
+        13: Reno
+        14: Henderson
+        15: Carson City
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x0F-python-object_relational_mapping$ 
+```
+
 
 ---
 
