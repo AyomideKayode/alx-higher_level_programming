@@ -40,10 +40,27 @@ Write a Bash script that takes in a URL, sends a request to that URL, and displa
 
 Please test your script in the sandbox provided, using the web server running on port 5000
 
+```sh
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ls
+0-body_size.sh  README.md
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./0-body_size.sh 0.0.0.0:5000
+Content-Length: 10
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
+```
+
+1. [cURL to the end](./1-body.sh) :
+
+Write a Bash script that takes in a URL, sends a `GET` request to the URL, and displays the body of the response
+
+- Display only body of a `200` status code response
+- You have to use `curl`
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
 | Task                    | File                                                 |
 | ----------------------- | ---------------------------------------------------- |
 |                    |
-| 1. cURL to the end      | [1-body.sh](./1-body.sh)                             |
+|                              |
 | 2. cURL Method          | [2-delete.sh](./2-delete.sh)                         |
 | 3. cURL only methods    | [3-methods.sh](./3-methods.sh)                       |
 | 4. cURL headers         | [4-header.sh](./4-header.sh)                         |
