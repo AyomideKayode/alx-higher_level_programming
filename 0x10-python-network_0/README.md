@@ -85,12 +85,27 @@ Write a Bash script that takes in a URL and displays all HTTP methods the server
 
 Please test your script in the sandbox provided, using the web server running on port 5000
 
+```sh
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./3-methods.sh 0.0.0.0:5000/route_4
+Allow: OPTIONS, HEAD, PUT
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# 
+```
+
+4. [cURL headers](./4-header.sh) :
+
+Write a Bash script that takes in a URL as an argument, sends a `GET` request to the URL, and displays the body of the response
+
+- A header variable `X-School-User-Id` must be sent with the value `98`
+- You have to use `curl`
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
 | Task                    | File                                                 |
 | ----------------------- | ---------------------------------------------------- |
 |                    |
 |                              |
 |                         |
 |                        |
-| 4. cURL headers         | [4-header.sh](./4-header.sh)                         |
+|                          |
 | 5. cURL POST parameters | [5-post_params.sh](./5-post_params.sh)               |
 | 6. Find a peak          | [6-peak.py](./6-peak.py), [6-peak.txt](./6-peak.txt) |
