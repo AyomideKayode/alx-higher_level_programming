@@ -60,7 +60,7 @@ Please test your script in the sandbox provided, using the web server running on
 ```sh
 root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./1-body.sh 0.0.0.0:5000/route_1 ; echo ""
 Route 2
-root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# 
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
 ```
 
 2. [cURL Method](./2-delete.sh) :
@@ -74,7 +74,7 @@ Please test your script in the sandbox provided, using the web server running on
 ```sh
 root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./2-delete.sh 0.0.0.0:5000/route_3 ; echo ""
 I'm a DELETE request
-root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# 
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
 ```
 
 3. [cURL only methods](./3-methods.sh) :
@@ -88,7 +88,7 @@ Please test your script in the sandbox provided, using the web server running on
 ```sh
 root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./3-methods.sh 0.0.0.0:5000/route_4
 Allow: OPTIONS, HEAD, PUT
-root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# 
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
 ```
 
 4. [cURL headers](./4-header.sh) :
@@ -103,7 +103,7 @@ Please test your script in the sandbox provided, using the web server running on
 ```sh
 root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./4-header.sh 0.0.0.0:5000/route_5 ; echo ""
 Hello School!
-root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# 
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
 ```
 
 5. [cURL POST parameters](./5-post_params.sh) :
@@ -116,7 +116,69 @@ Write a Bash script that takes in a URL, sends a `POST` request to the passed UR
 
 Please test your script in the sandbox provided, using the web server running on port 5000
 
-| Task                    | File                                                 |
-| ----------------------- | ---------------------------------------------------- |
+```sh
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./5-post_params.sh 0.0.0.0:5000/route_6 ; echo ""
+POST params:
+        email: test@gmail.com
+        subject: I will always be here for PLD
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
+```
 
-| 6. Find a peak          | [6-peak.py](./6-peak.py), [6-peak.txt](./6-peak.txt) |
+6. [Find a peak](./6-peak.py), [6-peak.txt](./6-peak.txt) :
+
+Technical interview preparation:
+
+- You are not allowed to google anything
+- Whiteboard first
+
+Write a function that finds a peak in a list of unsorted integers.
+
+- Prototype: `def find_peak(list_of_integers):`
+- You are not allowed to import any module
+- Your algorithm must have the lowest complexity (<em>hint: you don’t need to go through all numbers to find a peak</em>)
+- `6-peak.py` must contain the function
+- `6-peak.txt` must contain the complexity of your algorithm: `O(log(n))`, `O(n)`, `O(nlog(n))` or `O(n2)`
+- **Note**: there may be more than one peak in the list
+
+```sh
+guillaume@ubuntu:~/0x10$ cat 6-main.py
+#!/usr/bin/python3
+""" Test function find_peak """
+find_peak = __import__('6-peak').find_peak
+
+print(find_peak([1, 2, 4, 6, 3]))
+print(find_peak([4, 2, 1, 2, 3, 1]))
+print(find_peak([2, 2, 2]))
+print(find_peak([]))
+print(find_peak([-2, -4, 2, 1]))
+print(find_peak([4, 2, 1, 2, 2, 2, 3, 1]))
+
+guillaume@ubuntu:~/0x10$ ./6-main.py
+6
+3
+2
+None
+2
+4
+guillaume@ubuntu:~/0x10$ wc -l 6-peak.txt
+2 6-peak.txt
+guillaume@ubuntu:~/0x10$
+```
+
+---
+
+### Environment
+
+- Language: Python 3.4.3
+  - OS: Ubuntu 20.04 LTS
+  - Compiler: python3
+  - Style guidelines:
+    - [PEP 8 (version 1.7)](https://www.python.org/dev/peps/pep-0008/)
+
+---
+
+## Author
+
+- **<em>Website</em>** - [Ayomide Kayode](https://github.com/AyomideKayode)
+- **<em>ALX Software Engineering Program</em>** - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- **<em>Twitter</em>** - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
