@@ -67,15 +67,30 @@ root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
 
 Write a Bash script that sends a `DELETE` request to the URL passed as the first argument and displays the body of the response
 
-- You have to use curl
+- You have to use `curl`
 
 Please test your script in the sandbox provided, using the web server running on port 5000
+
+```sh
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./2-delete.sh 0.0.0.0:5000/route_3 ; echo ""
+I'm a DELETE request
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# 
+```
+
+3. [cURL only methods](./3-methods.sh) :
+
+Write a Bash script that takes in a URL and displays all HTTP methods the server will accept.
+
+- You have to use `curl`
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
 | Task                    | File                                                 |
 | ----------------------- | ---------------------------------------------------- |
 |                    |
 |                              |
 |                         |
-| 3. cURL only methods    | [3-methods.sh](./3-methods.sh)                       |
+|                        |
 | 4. cURL headers         | [4-header.sh](./4-header.sh)                         |
 | 5. cURL POST parameters | [5-post_params.sh](./5-post_params.sh)               |
 | 6. Find a peak          | [6-peak.py](./6-peak.py), [6-peak.txt](./6-peak.txt) |
