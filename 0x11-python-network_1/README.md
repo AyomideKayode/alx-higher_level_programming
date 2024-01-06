@@ -88,13 +88,33 @@ Write a Python script that takes in a URL, sends a request to the URL and displa
 
 Please test your script in the sandbox provided, using the web server running on port 5000
 
+```sh
+root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# ./3-error_code.py http://0.0.0.0:5000
+Index
+root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# ./3-error_code.py http://0.0.0.0:5000/status_401
+Error code: 401
+root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# ./3-error_code.py http://0.0.0.0:5000/doesnt_exist
+Error code: 404
+root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# ./3-error_code.py http://0.0.0.0:5000/status_500
+Error code: 500
+root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1#
+```
+
+4. [What's my status? #1](./4-hbtn_status.py) :
+
+Write a Python script that fetches `https://alx-intranet.hbtn.io/status`
+
+- You must use the package `requests`
+- You are not allow to import packages other than `requests`
+- The body of the response must be display like the following example (tabulation before `-`)
+
 | Task                        | File                                   |
 | --------------------------- | -------------------------------------- |
 |  |
 |  |
 |    |
 |    |
-| 4. What's my status? #1     | [4-hbtn_status.py](./4-hbtn_status.py) |
+|  |
 | 5. Response header value #1 | [5-hbtn_header.py](./5-hbtn_header.py) |
 | 6. POST an email #1         | [6-post_email.py](./6-post_email.py)   |
 | 7. Error code #1            | [7-error_code.py](./7-error_code.py)   |
