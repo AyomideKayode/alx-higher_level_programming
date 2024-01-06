@@ -40,10 +40,28 @@ Body response:$
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ 
 ```
 
+1. [Response header value #0](./1-hbtn_header.py) :
+
+Write a Python script that takes in a URL, sends a request to the URL and displays the value of the `X-Request-Id` variable found in the header of the response.
+
+- You must use the packages `urllib` and `sys`
+- You are not allow to import packages other than `urllib` and `sys`
+- The value of this variable is different for each request
+- You don’t need to check arguments passed to the script (number or type)
+- You must use a `with` statement
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ ./1-hbtn_header.py https://alx-intranet.hbtn.io
+377b805d-df8c-4449-b756-dea1a4d19b6a
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ ./1-hbtn_header.py https://alx-intranet.hbtn.io
+38a5cace-ff33-4e3f-9d50-281dae0e21b4
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ 
+```
+
 | Task                        | File                                   |
 | --------------------------- | -------------------------------------- |
 |  |
-| 1. Response header value #0 | [1-hbtn_header.py](./1-hbtn_header.py) |
+|  |
 | 2. POST an email #0         | [2-post_email.py](./2-post_email.py)   |
 | 3. Error code #0            | [3-error_code.py](./3-error_code.py)   |
 | 4. What's my status? #1     | [4-hbtn_status.py](./4-hbtn_status.py) |
