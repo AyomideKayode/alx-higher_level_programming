@@ -58,11 +58,23 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ ./1-hbtn_
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ 
 ```
 
+2. [POST an email #0](./2-post_email.py) :
+
+Write a Python script that takes in a URL and an email, sends a `POST` request to the passed URL with the email as a parameter, and displays the body of the response (decoded in `utf-8`)
+
+- The email must be sent in the `email` variable
+- You must use the packages `urllib` and `sys`
+- You are not allowed to import packages other than `urllib` and `sys`
+- You don’t need to check arguments passed to the script (number or type)
+- You must use the `with` statement
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
 | Task                        | File                                   |
 | --------------------------- | -------------------------------------- |
 |  |
 |  |
-| 2. POST an email #0         | [2-post_email.py](./2-post_email.py)   |
+|    |
 | 3. Error code #0            | [3-error_code.py](./3-error_code.py)   |
 | 4. What's my status? #1     | [4-hbtn_status.py](./4-hbtn_status.py) |
 | 5. Response header value #1 | [5-hbtn_header.py](./5-hbtn_header.py) |
