@@ -200,4 +200,37 @@ root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# ./8-json_
 root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# 
 ```
 
-9. [My GitHub!](./10-my_github.py) 
+9. [My GitHub!](./10-my_github.py) :
+
+Write a Python script that takes your GitHub credentials (username and password) and uses the [GitHub API](https://docs.github.com/en/rest/users?apiVersion=2022-11-28) to display your `id`
+
+- You must use [Basic Authentication](https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28) with a [personal access token as password](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) to access to your information (only `read:user` permission is needed)
+- The first argument will be your `username`
+- The second argument will be your `password` (in your case, a personal access token as password)
+- You must use the package `requests` and `sys`
+- You are not allowed to import packages other than `requests` and `sys`
+- You don’t need to check arguments passed to the script (number or type)
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ ./10-my_github.py AyomideKayode my_personal_access_token
+117745553
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ 
+```
+
+---
+
+### Environment
+
+- Language: Python 3.4.3
+  - OS: Ubuntu 20.04 LTS
+  - Compiler: python3
+  - Style guidelines:
+    - [PEP 8 (version 1.7)](https://www.python.org/dev/peps/pep-0008/)
+
+---
+
+## Author
+
+- **<em>Website</em>** - [Ayomide Kayode](https://github.com/AyomideKayode)
+- **<em>ALX Software Engineering Program</em>** - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- **<em>Twitter</em>** - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
