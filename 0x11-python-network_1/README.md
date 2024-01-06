@@ -142,6 +142,23 @@ Write a Python script that takes in a URL and an email address, sends a `POST` r
 
 Please test your script in the sandbox provided, using the web server running on port 5000
 
+```sh
+root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# ./6-post_email.py http://0.0.0.0:5000/post_email hr@holbertonschool.com
+Your email is: hr@holbertonschool.com
+root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# 
+```
+
+7. [Error code #1](./7-error_code.py) :
+
+Write a Python script that takes in a URL, sends a request to the URL and displays the body of the response.
+
+- If the HTTP status code is greater than or equal to 400, print: `Error code:` followed by the value of the HTTP status code
+- You must use the packages `requests` and `sys`
+- You are not allowed to import packages other than `requests` and `sys`
+- You don’t need to check arguments passed to the script (number or type)
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
 
 | Task                        | File                                   |
 | --------------------------- | -------------------------------------- |
@@ -152,6 +169,6 @@ Please test your script in the sandbox provided, using the web server running on
 |  |
 |  |
 |    |
-| 7. Error code #1            | [7-error_code.py](./7-error_code.py)   |
+|    |
 | 8. Search API               | [8-json_api.py](./8-json_api.py)       |
 | 9. My GitHub!               | [10-my_github.py](./10-my_github.py)   |
