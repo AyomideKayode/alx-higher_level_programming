@@ -172,6 +172,7 @@ Write a Bash script that sends a request to a URL passed as an argument, and dis
 - You are not allowed to use any pipe, redirection, etc.
 - You are not allowed to use `;` and `&&`
 - You have to use `curl`
+
 Please test your script in the sandbox provided, using the web server running on port 5000
 
 ```sh
@@ -179,7 +180,7 @@ root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./100-sta
 200
 root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./100-status_code.sh 0.0.0.0:5000/nop ; echo ""
 404
-root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# 
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
 ```
 
 8. [cURL a JSON file](./101-post_json.sh) :
@@ -188,7 +189,33 @@ Write a Bash script that sends a JSON `POST` request to a URL passed as the firs
 
 - Your script must send a `POST` request with the contents of a file, passed with the filename as the second argument of the script, in the body of the request
 - You have to use `curl`
+
 Please test your scripts in the sandbox provided, using the web server running on port 5000
+
+```sh
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./101-post_json.sh 0.0.0.0:5000/route_json my_json_0 ; echo ""
+Valid JSON
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./101-post_json.sh 0.0.0.0:5000/route_json my_json_1 ; echo ""
+Not a valid JSON
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./101-post_json.sh 0.0.0.0:5000/route_json my_json_2 ; echo ""
+Not a valid JSON
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
+```
+
+9. [Catch me if you can!](./102-catch_me.sh) :
+
+Write a Bash script that makes a request to `0.0.0.0:5000/catch_me` that causes the server to respond with a message containing `You got me!`, in the body of the response.
+
+- You have to use `curl`
+- You are not allow to use `echo`, `cat`, etc. to display the final result
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
+```sh
+guillaume@ubuntu:~/0x10$ ./102-catch_me.sh ; echo ""
+You got me!
+guillaume@ubuntu:~/0x10$
+```
 
 ---
 
