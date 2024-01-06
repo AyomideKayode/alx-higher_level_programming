@@ -108,6 +108,30 @@ Write a Python script that fetches `https://alx-intranet.hbtn.io/status`
 - You are not allow to import packages other than `requests`
 - The body of the response must be display like the following example (tabulation before `-`)
 
+```sh
+root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# ./4-hbtn_status.py | cat -e
+Body response:$
+        - type: <class 'str'>$
+        - content: OK$
+root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# 
+```
+
+5. [Response header value #1](./5-hbtn_header.py) :
+
+Write a Python script that takes in a URL, sends a request to the URL and displays the value of the variable `X-Request-Id` in the response header
+
+- You must use the packages `requests` and `sys`
+- You are not allow to import other packages than `requests` and `sys`
+- The value of this variable is different for each request
+- You don’t need to check script arguments (number and type)
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ ./5-hbtn_header.py https://alx-intranet.hbtn.io
+3d285023-5df5-400e-b28f-c091ed0be54a
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ 
+```
+
+
 | Task                        | File                                   |
 | --------------------------- | -------------------------------------- |
 |  |
@@ -115,7 +139,7 @@ Write a Python script that fetches `https://alx-intranet.hbtn.io/status`
 |    |
 |    |
 |  |
-| 5. Response header value #1 | [5-hbtn_header.py](./5-hbtn_header.py) |
+|  |
 | 6. POST an email #1         | [6-post_email.py](./6-post_email.py)   |
 | 7. Error code #1            | [7-error_code.py](./7-error_code.py)   |
 | 8. Search API               | [8-json_api.py](./8-json_api.py)       |
