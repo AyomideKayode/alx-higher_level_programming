@@ -32,12 +32,12 @@ Write a Python script that fetches `https://alx-intranet.hbtn.io/status`
 - You must use a `with` statement
 
 ```sh
-guillaume@ubuntu:~/0x11$ ./0-hbtn_status.py | cat -e
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ ./0-hbtn_status.py | cat -e
 Body response:$
-    - type: <class 'bytes'>$
-    - content: b'OK'$
-    - utf8 content: OK$
-guillaume@ubuntu:~/0x11$ 
+        - type: <class 'bytes'>$
+        - content: b'OK'$
+        - utf8 content: OK$
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ 
 ```
 
 | Task                        | File                                   |
