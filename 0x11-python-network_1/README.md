@@ -70,12 +70,30 @@ Write a Python script that takes in a URL and an email, sends a `POST` request t
 
 Please test your script in the sandbox provided, using the web server running on port 5000
 
+```sh
+root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# ./2-post_email.py http://0.0.0.0:5000/post_email hr@holbertonschool.com
+Your email is: hr@holbertonschool.com
+root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# 
+```
+
+3. [Error code #0](./3-error_code.py) :
+
+Write a Python script that takes in a URL, sends a request to the URL and displays the body of the response (decoded in `utf-8`).
+
+- You have to manage `urllib.error.HTTPError` exceptions and print: `Error code:` followed by the HTTP status code
+- You must use the packages `urllib` and `sys`
+- You are not allowed to import other packages than `urllib` and `sys`
+- You don’t need to check arguments passed to the script (number or type)
+- You must use the `with` statement
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
 | Task                        | File                                   |
 | --------------------------- | -------------------------------------- |
 |  |
 |  |
 |    |
-| 3. Error code #0            | [3-error_code.py](./3-error_code.py)   |
+|    |
 | 4. What's my status? #1     | [4-hbtn_status.py](./4-hbtn_status.py) |
 | 5. Response header value #1 | [5-hbtn_header.py](./5-hbtn_header.py) |
 | 6. POST an email #1         | [6-post_email.py](./6-post_email.py)   |
