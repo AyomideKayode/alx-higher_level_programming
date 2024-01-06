@@ -131,6 +131,17 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ ./5-hbtn_
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$ 
 ```
 
+6. [POST an email #1](./6-post_email.py) :
+
+Write a Python script that takes in a URL and an email address, sends a `POST` request to the passed URL with the email as a parameter, and finally displays the body of the response.
+
+- The email must be sent in the variable `email`
+- You must use the packages `requests` and `sys`
+- You are not allowed to import packages other than `requests` and `sys`
+- You don’t need to error check arguments passed to the script (number or type)
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
 
 | Task                        | File                                   |
 | --------------------------- | -------------------------------------- |
@@ -140,7 +151,7 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x11-python-network_1$
 |    |
 |  |
 |  |
-| 6. POST an email #1         | [6-post_email.py](./6-post_email.py)   |
+|    |
 | 7. Error code #1            | [7-error_code.py](./7-error_code.py)   |
 | 8. Search API               | [8-json_api.py](./8-json_api.py)       |
 | 9. My GitHub!               | [10-my_github.py](./10-my_github.py)   |
