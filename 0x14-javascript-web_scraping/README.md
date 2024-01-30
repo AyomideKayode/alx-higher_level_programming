@@ -174,3 +174,38 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./
   '10': 12 }
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
 ```
+
+7. [Who was playing in this movie?](./100-starwars_characters.js) :
+
+Write a script that prints all characters of a Star Wars movie:
+
+- The first argument is the Movie ID - example: 3 = “Return of the Jedi”
+- Display one character name by line
+- You must use the `Star wars API`
+- You must use the module `request`
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./100-starwars_characters.js 3
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./100-starwars_characters.js 3
+C-3PO
+Obi-Wan Kenobi
+Leia Organa
+Darth Vader
+R2-D2
+Chewbacca
+Han Solo
+Jabba Desilijic Tiure
+Yoda
+Luke Skywalker
+Palpatine
+Wedge Antilles
+Lando Calrissian
+Boba Fett
+Ackbar
+Arvel Crynyd
+Nien Nunb
+Wicket Systri Warrick
+Mon Mothma
+Bib Fortuna
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
+```
