@@ -100,6 +100,22 @@ code: 200
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
 ```
 
+3. [Star wars movie title](./3-starwars_title.js) :
+
+Write a script that prints the title of a Star Wars movie where the episode number matches a given integer.
+
+- The first argument is the movie ID
+- You must use the [Star wars API](https://swapi-api.alx-tools.com/) with the endpoint `https://swapi-api.alx-tools.com/api/films/:id`
+- You must use the module request
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./3-starwars_title.js 1
+A New Hope
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./3-starwars_title.js 5
+Attack of the Clones
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
+```
+
 
 
 | Task                        | File                                           |
@@ -107,7 +123,7 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 |                    |
 |                  |
 |            |
-| 3. Star wars movie title    | [3-starwars_title.js](./3-starwars_title.js)   |
+|    |
 | 4. Star wars Wedge Antilles | [4-starwars_count.js](./4-starwars_count.js)   |
 | 5. Loripsum                 | [5-request_store.js](./5-request_store.js)     |
 | 6. How many completed?      | [6-completed_tasks.js](./6-completed_tasks.js) |
