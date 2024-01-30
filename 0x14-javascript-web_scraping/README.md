@@ -69,11 +69,44 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
 ```
 
+1. [Write me](./1-writeme.js) :
+
+Write a script that writes a string to a file.
+
+- The first argument is the file path
+- The second argument is the string to write
+- The content of the file must be written in `utf-8`
+- If an error occurred during while writing, print the error object
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./1-writeme.js my_file.txt "Python is cool"
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ cat my_file.txt 
+Python is coolayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ cat my_file.txt ; echo ""
+Python is cool
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
+```
+
+2. [Status code](./2-statuscode.js) :
+
+Write a script that display the status code of a `GET` request.
+
+- The first argument is the URL to request (`GET`)
+- The status code must be printed like this: `code: <status code>`
+- You must use the module `request`
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./2-statuscode.js https://alx-intranet.hbtn.io/status
+code: 200
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
+```
+
+
+
 | Task                        | File                                           |
 | --------------------------- | ---------------------------------------------- |
 |                    |
-| 1. Write me                 | [1-writeme.js](./1-writeme.js)                 |
-| 2. Status code              | [2-statuscode.js](./2-statuscode.js)           |
+|                  |
+|            |
 | 3. Star wars movie title    | [3-starwars_title.js](./3-starwars_title.js)   |
 | 4. Star wars Wedge Antilles | [4-starwars_count.js](./4-starwars_count.js)   |
 | 5. Loripsum                 | [5-request_store.js](./5-request_store.js)     |
