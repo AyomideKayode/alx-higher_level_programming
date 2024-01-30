@@ -129,9 +129,12 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./
 3
 ```
 
+5. [Loripsum](./5-request_store.js) :
+
+
 
 
 | Task                        | File                                           |
 | --------------------------- | ---------------------------------------------- |
-| 5. Loripsum                 | [5-request_store.js](./5-request_store.js)     |
+|      |
 | 6. How many completed?      | [6-completed_tasks.js](./6-completed_tasks.js) |
