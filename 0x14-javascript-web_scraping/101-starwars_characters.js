@@ -1,57 +1,36 @@
 #!/usr/bin/node
 
-// Require the 'request' module
 const request = require('request');
 
-// Get movieID from command line args
-const movieId = process.argv[2];
-// Get the URL for SWAPI film API
-const apiUrl = `https://swapi-api.alx-tools.com/api/films/${movieId}`;
+// Construct the SWAPI URL based on the film ID from the command line arguments
+const apiUrl = 'https://swapi-api.alx-tools.com/api/films/' + process.argv[2];
 
-// Make request to the SWAPI film API
+// Make a request to the SWAPI URL
 request(apiUrl, function (error, response, body) {
-  if (error) {
-    // Check for errors in the request
-    console.error(error);
-  } else if (response.statusCode === 200) {
-    // If statusCode is 200 (OK), proceed
+  // Check for errors in the request
+  if (!error) {
+    // Parse the JSON response body to get the list of characters
+    const characters = JSON.parse(body).characters;
 
-    // Parse the JSON body response
-    const movieData = JSON.parse(body);
-
-    // Check if characters property exists and is an array
-    if (
-      Array.isArray(movieData.characters) &&
-      movieData.characters.length > 0
-    ) {
-      // Iterate over each character in the movie
-      for (let i = 0; i < movieData.characters.length; i++) {
-        // Get the URL for each character
-        const characterUrl = movieData.characters[i];
-
-        // Make a request to fetch information about each character
-        request(characterUrl, function (charError, charResponse, charBody) {
-          if (charError) {
-            // Check for errors in the request for character details
-            console.error(charError);
-          } else if (charResponse.statusCode === 200) {
-            // If statusCode is 200 (OK), parse and print the character name
-            const characterData = JSON.parse(charBody);
-            console.log(characterData.name);
-          } else {
-            // If the response status code is not 200, output an error message
-            console.log(`Error code: ${charResponse.statusCode}`);
-          }
-        });
-      }
-    } else {
-      // If characters array is empty or does not exist, output an error message
-      console.log(
-        'Invalid movie ID or no characters found for the given movie.'
-      );
-    }
-  } else {
-    // If the response status code is not 200, output an error message
-    console.log(`Error code: ${response.statusCode}`);
+    // Call the function to print characters, starting from index 0
+    printCharacters(characters, 0);
   }
 });
+
+// Function to recursively print characters
+function printCharacters (characters, index) {
+  // Make a request to fetch information about the character at the given index
+  request(characters[index], function (error, response, body) {
+    // Check for errors in the request
+    if (!error) {
+      // Print the name of the character
+      console.log(JSON.parse(body).name);
+
+      // Check if there are more characters to print
+      if (index + 1 < characters.length) {
+        // Recursively call the function for the next character
+        printCharacters(characters, index + 1);
+      }
+    }
+  });
+}
