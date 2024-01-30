@@ -116,14 +116,22 @@ Attack of the Clones
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
 ```
 
+4. [Star wars Wedge Antilles](./4-starwars_count.js) :
+
+Write a script that prints the number of movies where the character “Wedge Antilles” is present.
+
+- The first argument is the API URL of the [Star wars API](https://swapi-api.alx-tools.com/): `https://swapi-api.alx-tools.com/api/films/`
+- Wedge Antilles is character ID `18` - your script must use this ID for filtering the result of the API
+- You must use the module `request`
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./4-starwars_count.js https://swapi-api.alx-tools.com/api/films
+3
+```
+
 
 
 | Task                        | File                                           |
 | --------------------------- | ---------------------------------------------- |
-|                    |
-|                  |
-|            |
-|    |
-| 4. Star wars Wedge Antilles | [4-starwars_count.js](./4-starwars_count.js)   |
 | 5. Loripsum                 | [5-request_store.js](./5-request_store.js)     |
 | 6. How many completed?      | [6-completed_tasks.js](./6-completed_tasks.js) |
