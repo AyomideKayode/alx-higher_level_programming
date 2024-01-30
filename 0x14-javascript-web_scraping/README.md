@@ -57,7 +57,7 @@ Write a script that reads and prints the content of a file.
 - If an error occurred during the reading, print the error object
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./0-readme.js cisfun 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./0-readme.js cisfun
 C is super fun!
 
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./0-readme.js doesntexist
@@ -66,7 +66,7 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./
   code: 'ENOENT',
   syscall: 'open',
   path: 'doesntexist' }
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 ```
 
 1. [Write me](./1-writeme.js) :
@@ -80,10 +80,10 @@ Write a script that writes a string to a file.
 
 ```sh
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./1-writeme.js my_file.txt "Python is cool"
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ cat my_file.txt 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ cat my_file.txt
 Python is coolayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ cat my_file.txt ; echo ""
 Python is cool
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 ```
 
 2. [Status code](./2-statuscode.js) :
@@ -97,7 +97,7 @@ Write a script that display the status code of a `GET` request.
 ```sh
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./2-statuscode.js https://alx-intranet.hbtn.io/status
 code: 200
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 ```
 
 3. [Star wars movie title](./3-starwars_title.js) :
@@ -113,7 +113,7 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./
 A New Hope
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./3-starwars_title.js 5
 Attack of the Clones
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 ```
 
 4. [Star wars Wedge Antilles](./4-starwars_count.js) :
@@ -149,7 +149,7 @@ guillaume@ubuntu:~/0x14$ cat loripsum
 
 <p>Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Nos cum te, M. Quem si tenueris, non modo meum Ciceronem, sed etiam me ipsum abducas licebit. Apparet statim, quae sint officia, quae actiones. Ergo instituto veterum, quo etiam Stoici utuntur, hinc capiamus exordium. Eadem nunc mea adversum te oratio est. Quid, si etiam iucunda memoria est praeteritorum malorum? Hoc enim constituto in philosophia constituta sunt omnia. </p>
 
-guillaume@ubuntu:~/0x14$ 
+guillaume@ubuntu:~/0x14$
 ```
 
 6. [How many completed?](./6-completed_tasks.js) :
@@ -172,7 +172,7 @@ ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./
   '8': 11,
   '9': 8,
   '10': 12 }
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 ```
 
 7. [Who was playing in this movie?](./100-starwars_characters.js) :
@@ -207,5 +207,60 @@ Nien Nunb
 Wicket Systri Warrick
 Mon Mothma
 Bib Fortuna
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 ```
+
+8. [Right Order](./101-starwars_characters.js) :
+
+Write a script that prints all characters of a Star Wars movie:
+
+- The first argument is the Movie ID - example: 3 = “Return of the Jedi”
+- Display one character name by line in the same order of the list “characters” in the /films/ response
+- You must use the Star wars API
+- You must use the module `request`
+
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ exe 101-starwars_characters.js
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./101-starwars_characters.js 3
+Leia Organa
+Darth Vader
+C-3PO
+Obi-Wan Kenobi
+Chewbacca
+R2-D2
+Luke Skywalker
+Han Solo
+Wedge Antilles
+Jabba Desilijic Tiure
+Mon Mothma
+Boba Fett
+Arvel Crynyd
+Yoda
+Ackbar
+Nien Nunb
+Wicket Systri Warrick
+Bib Fortuna
+Lando Calrissian
+Palpatine
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ semistandard 101-starwars_characters.js
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$
+```
+
+---
+
+### Environment
+
+- Language: Javascript, Node v20.10.0
+  - OS: Ubuntu 20.04 LTS
+  - Style guidelines:
+    - [Javascript Semistandard](https://github.com/standard/semistandard) `sudo npm install semistandard --global`
+  - [Install Semistandard - Note](../0x12-javascript-warm_up/README.md)
+    - [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
+
+---
+
+## Author
+
+- _Website_ - [Ayomide Kayode](https://github.com/AyomideKayode)
+- _ALX Software Engineering Program_ - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
+- _Twitter_ - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
