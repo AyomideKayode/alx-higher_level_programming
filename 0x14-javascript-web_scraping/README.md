@@ -56,6 +56,18 @@ Write a script that reads and prints the content of a file.
 - The content of the file must be read in `utf-8`
 - If an error occurred during the reading, print the error object
 
+```sh
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./0-readme.js cisfun 
+C is super fun!
+
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./0-readme.js doesntexist
+{ [Error: ENOENT: no such file or directory, open 'doesntexist']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'doesntexist' }
+ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ 
+```
 
 | Task                        | File                                           |
 | --------------------------- | ---------------------------------------------- |
