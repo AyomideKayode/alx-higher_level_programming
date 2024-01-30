@@ -220,28 +220,27 @@ Write a script that prints all characters of a Star Wars movie:
 - You must use the module `request`
 
 ```sh
-ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ exe 101-starwars_characters.js
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./101-starwars_characters.js 3
-Leia Organa
-Darth Vader
+Luke Skywalker
 C-3PO
+R2-D2
+Darth Vader
+Leia Organa
 Obi-Wan Kenobi
 Chewbacca
-R2-D2
-Luke Skywalker
 Han Solo
-Wedge Antilles
 Jabba Desilijic Tiure
-Mon Mothma
-Boba Fett
-Arvel Crynyd
+Wedge Antilles
 Yoda
-Ackbar
-Nien Nunb
-Wicket Systri Warrick
-Bib Fortuna
-Lando Calrissian
 Palpatine
+Boba Fett
+Lando Calrissian
+Ackbar
+Mon Mothma
+Arvel Crynyd
+Wicket Systri Warrick
+Nien Nunb
+Bib Fortuna
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$ semistandard 101-starwars_characters.js
 ayomide@Kazzywiz:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 ```
