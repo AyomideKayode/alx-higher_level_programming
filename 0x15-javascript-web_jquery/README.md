@@ -1,6 +1,6 @@
 # Project: 0x15. JavaScript - Web jQuery
 
-![did_sum1_say_jquery](./did_someone_say_jquery.jpg){ width=85% }
+![did_sum1_say_jquery](./did_someone_say_jquery.jpg)
 
 ## Resources
 
